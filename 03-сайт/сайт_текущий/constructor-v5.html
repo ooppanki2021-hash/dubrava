@@ -1,0 +1,868 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Конструктор v7.5 — все 25 + инструментарий + копировать</title>
+<link rel="stylesheet" href="/style.css?v=7">
+<style>
+body{font-family:-apple-system, sans-serif; background:#F6F9FF; font-size:14px}
+.box{background:white; border:1px solid #DCE8F5; border-radius:12px; padding:14px; margin:10px 0}
+.toolbar{display:flex; gap:6px; flex-wrap:wrap; padding:10px; background:#EEF4FF; border-radius:10px; position:sticky; top:0; z-index:10}
+.toolbar button{border:1px solid #DCE8F5; background:white; border-radius:8px; padding:6px 10px; font-size:12px; cursor:pointer}
+.toolbar select{width:auto; padding:6px 8px; margin:0; font-size:12px; border:1px solid #DCE8F5; background:white; border-radius:8px}
+#editor{border:2px solid #7A9AB8; border-radius:12px; padding:16px; min-height:400px; background:white; outline:none; line-height:1.7}
+input, select, textarea{width:100%; padding:8px 10px; border:1px solid #DCE8F5; border-radius:8px; font-size:13px; margin:3px 0}
+.btn-small{padding:8px 14px; border-radius:999px; border:0; background:#5A7A9A; color:white; cursor:pointer; font-size:12px}
+</style>
+</head><body>
+<div class="container" style="max-width:900px; padding:16px">
+<h1 class="sans" style="font-size:20px">Конструктор v7.5 — все 25 + инструментарий</h1>
+<p class="small muted">Открывает любую из 25 статей, можно править и скопировать любую страницу в новую. Токен запоминается один раз. Работает и на сайте, и с диска (тогда статьи грузятся с zapahstarosti.ru).</p>
+
+<div class="box sans">
+<h3 style="margin:0 0 6px">GitHub — один раз для сохранения</h3>
+<input id="owner" value="ooppanki2021-hash">
+<input id="repo" value="zapahstarosti">
+<input id="branch" value="main">
+<div style="display:flex; gap:8px; align-items:center">
+  <input id="token" type="password" placeholder="Токен ghp_... — нужен только для Сохранить и Скопировать" style="margin:3px 0">
+  <button type="button" id="tokenEye" class="btn-small" style="white-space:nowrap; background:#EEF4FF; color:#5A7A9A; border:1px solid #DCE8F5">👁</button>
+</div>
+<label class="small"><input type="checkbox" id="remember" checked> Запомнить токен</label>
+<div id="tokenStatus" class="small muted"></div>
+<div id="envNote" class="small" style="color:#B0782A; white-space:pre-wrap"></div>
+</div>
+
+<div class="box sans">
+<select id="slug">
+<option value="chto-takoe-2-nonenal">2-ноненаль — наука</option>
+<option value="kak-otlichit-istochnik-zapakha">Диагностика — где источник</option>
+<option value="ubrat-zapah">Тело — как уменьшить запах</option>
+<option value="zapah-v-kvartire">Квартира — общая карта</option>
+<option value="kak-ubrat-zapah-s-divana">Квартира — Диван</option>
+<option value="kak-ubrat-zapah-s-matrasa">Квартира — Матрас</option>
+<option value="kak-ubrat-zapah-iz-shkafa">Квартира — Шкаф</option>
+<option value="kak-ubrat-zapah-v-stiralnoj-mashine">Квартира — Стиралка</option>
+<option value="kak-ubrat-zapah-v-sanuzle">Квартира — Санузел</option>
+<option value="ventilyatsiya-i-vlazhnost">Квартира — Вентиляция</option>
+<option value="karta-kvartiry">Квартира — Карта квартиры</option>
+<option value="odezhda-i-tekstil">Тело — Одежда и текстиль</option>
+<option value="lekarstva-i-zapah">Тело — Лекарства</option>
+<option value="kogda-k-vrachu">Тело — Когда к врачу</option>
+<option value="kak-pogovorit-s-blizkim">Тело — Как поговорить с близким</option>
+<option value="sredstva-ot-zapaha">Средства — что нейтрализует</option>
+<option value="poroshok-dlya-tekstila">Средства — Порошок</option>
+<option value="tonik-protirka">Средства — Тоник</option>
+<option value="nabor">Средства — Набор</option>
+<option value="ochistitel-vozduha">Средства — Очиститель воздуха</option>
+<option value="karta-osetii">Карта Осетии — где собираем кору</option>
+<option value="kviz">Квиз</option>
+<option value="material-metod">Таблица материал-метод</option>
+<option value="faq">FAQ</option>
+<option value="o-proekte">О проекте</option>
+</select>
+<input id="newSlug" placeholder="Новый slug для новой статьи или для копии">
+<div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap">
+<button class="btn-small" onclick="load()">Открыть статью</button>
+<button class="btn-small" onclick="copyPage()" style="background:#EEF4FF; color:#5A7A9A; border:1px solid #DCE8F5">📋 Скопировать эту страницу в новую</button>
+</div>
+<div id="status" style="margin-top:8px; font-weight:bold; color:#5A7A9A; white-space:pre-wrap"></div>
+</div>
+
+<div class="box">
+<div class="toolbar sans">
+<select id="styleSel" onchange="applyStyle(this.value)" title="Стиль для выделенного текста">
+<option value="">Стиль текста…</option>
+<optgroup label="Заголовки">
+<option value="h2">Н2 — крупный заголовок раздела</option>
+<option value="h3">Н3 — подзаголовок поменьше</option>
+</optgroup>
+<optgroup label="Обычный текст">
+<option value="p">Обычный абзац</option>
+<option value="lead">Лид — крупный вводный абзац</option>
+<option value="small">Мелкая подпись, примечание</option>
+</optgroup>
+</select>
+<select id="sizeSel" onchange="applySize(this.value)" title="Размер для выделенного текста">
+<option value="">Размер…</option>
+<option value="2">Мелкий — для подписи</option>
+<option value="4">Чуть крупнее обычного</option>
+<option value="5">Крупный — выделить важное</option>
+<option value="6">Очень крупный</option>
+</select>
+<button onclick="exec('bold')">Жирный</button>
+<button onclick="addLink()">Ссылка</button>
+<button onclick="addAnchor()">Анкор id</button>
+<button onclick="exec('insertUnorderedList')">• Список</button>
+<button onclick="exec('insertOrderedList')">1. Список</button>
+<button onclick="addColor()">Цвет</button>
+<button onclick="addTable()">Таблица</button>
+<button onclick="addNote()">Важное</button>
+<button onclick="addKstati()">Кстати</button>
+<button onclick="addButton()">Кнопка</button>
+<button onclick="addImg()" title="Вставить картинку, которая уже лежит в /images/ сайта">Картинка (путь)</button>
+<button onclick="pickImgFromDevice()" title="Выбрать фото на компьютере или телефоне — сожму и залью в /images/ на сайте">📷 Картинка с устройства</button>
+<input type="file" id="imgFile" accept="image/*" style="display:none">
+<input type="color" id="colorPicker" value="#5A7A9A" style="width:32px; height:26px">
+</div>
+<div id="editor" contenteditable="true"><p>Выбери статью и нажми Открыть</p></div>
+</div>
+
+<div class="box sans">
+<input id="title" placeholder="Title SEO — уникальный">
+<textarea id="desc" rows="2" placeholder="Description SEO — уникальный"></textarea>
+<input id="h1" placeholder="H1 — заголовок статьи, он же первый в тексте">
+<div class="small muted">Поле H1 и первый заголовок в тексте — одно и то же: правь где удобнее. Печатаешь здесь — заголовок в тексте обновляется сразу. На странице всегда будет ровно один H1.</div>
+<label class="small"><input type="checkbox" id="noindexBox"> Скрыть от поисковиков (noindex) — галочка стоит = страница скрыта. Снимай только в неделю публикации.</label>
+</div>
+
+<!-- v7.3: окно вставки ссылки со списком статей сайта -->
+<div id="linkModal" style="display:none; position:fixed; inset:0; background:rgba(46,60,80,.45); z-index:50; padding:16px; overflow:auto">
+  <div style="background:white; border-radius:14px; max-width:480px; margin:40px auto; padding:18px; border:1px solid #DCE8F5">
+    <h3 class="sans" style="margin:0 0 10px; font-size:16px">Вставить ссылку</h3>
+    <label class="small muted sans">Куда ведёт ссылка — выбери статью сайта:</label>
+    <select id="linkArticle"><option value="">— выбери статью —</option></select>
+    <label class="small muted sans">…или впиши адрес вручную:</label>
+    <input id="linkUrl" placeholder="/kak-ubrat-zapah-s-divana/ или https://example.com">
+    <label class="small muted sans">Текст ссылки (анкор):</label>
+    <input id="linkText" placeholder="Например: как почистить диван">
+    <div style="display:flex; gap:8px; margin-top:12px">
+      <button class="btn-small" onclick="insertLink()">Вставить</button>
+      <button class="btn-small" onclick="closeLinkModal()" style="background:white; color:#5A7A9A; border:1px solid #DCE8F5">Отмена</button>
+    </div>
+    <div class="small muted" style="margin-top:8px">Выбери статью — адрес подставится сам. Если текст пустой, им станет название статьи.</div>
+  </div>
+</div>
+
+<div style="display:flex; gap:10px; flex-wrap:wrap">
+<button class="btn-small" onclick="save()" style="padding:10px 18px">💾 Сохранить на сайт</button>
+<button class="btn-small" onclick="download()" style="background:white; color:#5A7A9A; border:1px solid #DCE8F5">Скачать index.html</button>
+</div>
+</div>
+
+<script>
+// ===== v7: безопасный localStorage (не убивает скрипт в песочнице) =====
+function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function lsDel(k){ try{ localStorage.removeItem(k); }catch(e){} }
+// а можно ли вообще хранить? (в превью-песочнице — нельзя)
+var CAN_STORE=(function(){ try{ var k='__tst'; localStorage.setItem(k,'1'); localStorage.removeItem(k); return true; }catch(e){ return false; } })();
+
+// ===== v7: токен — всегда видно, введён ли он =====
+function tokenStatus(){
+  var v=document.getElementById('token').value.trim();
+  var el=document.getElementById('tokenStatus');
+  var rem=document.getElementById('remember');
+  var remChecked=rem?rem.checked:false;
+  if(!v){
+    el.textContent = CAN_STORE
+      ? 'Токен не введён.'
+      : '⚠️ Токен не введён. Здесь (превью в песочнице) запомнить его нельзя — после перезагрузки введи заново. На сайте zapahstarosti.ru — запомнится.';
+    return;
+  }
+  var msg='Токен введён: ••••'+v.slice(-4)+' ('+v.length+' симв.)';
+  if(!CAN_STORE) msg+=' — ⚠️ превью: не запомню, после перезагрузки введи заново';
+  else if(remChecked) msg+=' — запомню в этом браузере';
+  else msg+=' — галочка «Запомнить» снята, не запомню';
+  el.textContent=msg;
+}
+
+(function(){
+  let t=lsGet('gh_token'); if(t) document.getElementById('token').value=t;
+  var tok=document.getElementById('token');
+  var rem=document.getElementById('remember');
+  // сохраняем сразу при вводе/вставке, а не только при уходе с поля
+  tok.addEventListener('input', function(){
+    if(rem && rem.checked && CAN_STORE) lsSet('gh_token', this.value);
+    tokenStatus();
+  });
+  tok.addEventListener('change', function(){ tokenStatus(); });
+  if(rem) rem.addEventListener('change', function(){
+    if(this.checked && CAN_STORE){ lsSet('gh_token', tok.value); }
+    else if(!this.checked){ lsDel('gh_token'); }
+    tokenStatus();
+  });
+  var eye=document.getElementById('tokenEye');
+  if(eye) eye.addEventListener('click', function(){
+    tok.type = tok.type==='password' ? 'text' : 'password';
+    eye.textContent = tok.type==='password' ? '👁' : '🙈';
+  });
+  tokenStatus();
+  // подсказка где мы находимся
+  (function(){
+    var el=document.getElementById('envNote'); if(!el) return;
+    var notes=[];
+    if(!CAN_STORE) notes.push('• Это превью в песочнице: хранилище браузера заблокировано, токен при перезагрузке пропадёт. Редактировать и скачивать index.html можно, «Сохранить на сайт» может не пустить песочница.');
+    else if(location.protocol==='https:' && location.hostname && location.hostname.indexOf('zapahstarosti.ru')===-1) notes.push('• Открыто не на zapahstarosti.ru: статьи грузятся с живого сайта, всё работает, но токен запомнится только для этого адреса.');
+    if(location.protocol==='file:') notes.push('• Файл открыт с диска — статьи грузятся с живого сайта zapahstarosti.ru.');
+    el.textContent=notes.join('\n');
+  })();
+})();
+
+// ===== v7: база для загрузки статей =====
+// На сайте (http/https) — относительные пути. С диска (file://) или из превью — грузим прямо с живого сайта.
+var SITE='https://zapahstarosti.ru';
+var ON_WEB=/^https?:$/.test(location.protocol);
+var BASE=ON_WEB ? '' : SITE;
+
+function exec(c,v){
+  if(v==='h1') document.execCommand('formatBlock',false,'<h1>');
+  else if(v==='h2') document.execCommand('formatBlock',false,'<h2>');
+  else if(v==='h3') document.execCommand('formatBlock',false,'<h3>');
+  else document.execCommand(c,false,v||null);
+}
+// ===== v7.3: вставка ссылки — список статей сайта + свой адрес =====
+var SITE_ARTICLES=[
+ ['Базовые', [
+   ['/', 'Главная'],
+   ['/kak-otlichit-istochnik-zapakha/', 'Как отличить источник запаха'],
+   ['/chto-takoe-2-nonenal/', 'Что такое 2-ноненаль']
+ ]],
+ ['Тело', [
+   ['/ubrat-zapah/', 'Как уменьшить запах тела'],
+   ['/odezhda-i-tekstil/', 'Одежда и текстиль'],
+   ['/lekarstva-i-zapah/', 'Лекарства и запах'],
+   ['/kogda-k-vrachu/', 'Когда к врачу'],
+   ['/kak-pogovorit-s-blizkim/', 'Как поговорить с близким']
+ ]],
+ ['Квартира', [
+   ['/zapah-v-kvartire/', 'Как убрать запах в квартире'],
+   ['/kak-ubrat-zapah-s-matrasa/', 'Как убрать запах с матраса'],
+   ['/kak-ubrat-zapah-s-divana/', 'Как убрать запах с дивана'],
+   ['/kak-ubrat-zapah-iz-shkafa/', 'Как убрать запах из шкафа'],
+   ['/kak-ubrat-zapah-v-stiralnoj-mashine/', 'Запах в стиральной машине'],
+   ['/kak-ubrat-zapah-v-sanuzle/', 'Запах в санузле'],
+   ['/ventilyatsiya-i-vlazhnost/', 'Вентиляция и влажность'],
+   ['/karta-kvartiry/', 'Карта квартиры: где искать запах']
+ ]],
+ ['Средства', [
+   ['/sredstva-ot-zapaha/', 'Средства: что нейтрализует, а что маскирует'],
+   ['/poroshok-dlya-tekstila/', 'Порошок для текстиля'],
+   ['/tonik-protirka/', 'Тоник и протирка'],
+   ['/nabor/', 'Набор «Тело + текстиль»'],
+   ['/ochistitel-vozduha/', 'Очиститель воздуха и устройства']
+ ]],
+ ['Диагностика и интерактив', [
+   ['/kviz/', 'Квиз: где источник запаха'],
+   ['/material-metod/', 'Таблица материал-метод']
+ ]],
+ ['О проекте', [
+   ['/o-proekte/', 'О проекте'],
+   ['/karta-osetii/', 'Карта Осетии: где собираем кору дуба'],
+   ['/faq/', 'FAQ — 20 ответов']
+ ]]
+];
+var __linkSelRange=null;
+function openLinkModal(){
+  var sel=window.getSelection();
+  var ed=document.getElementById('editor');
+  __linkSelRange=null;
+  if(sel && sel.rangeCount && ed.contains(sel.getRangeAt(0).commonAncestorContainer)) __linkSelRange=sel.getRangeAt(0).cloneRange();
+  document.getElementById('linkText').value=(sel?sel.toString():'').trim();
+  document.getElementById('linkUrl').value='';
+  document.getElementById('linkArticle').selectedIndex=0;
+  document.getElementById('linkModal').style.display='block';
+}
+function closeLinkModal(){ document.getElementById('linkModal').style.display='none'; }
+function insertLink(){
+  var artSel=document.getElementById('linkArticle');
+  var art=artSel.value;
+  var url=document.getElementById('linkUrl').value.trim();
+  var txt=document.getElementById('linkText').value.trim();
+  if(!art && !url){ alert('Выбери статью из списка или впиши адрес'); return; }
+  var href=art||url;
+  if(!/^(https?:|\/|#|mailto:|tel:)/i.test(href)) href='https://'+href;
+  if(!txt) txt = art ? artSel.options[artSel.selectedIndex].textContent : href;
+  closeLinkModal();
+  var ed=document.getElementById('editor');
+  ed.focus();
+  var sel=window.getSelection();
+  if(__linkSelRange && sel){ sel.removeAllRanges(); sel.addRange(__linkSelRange); }
+  else if(sel){ var r=document.createRange(); r.selectNodeContents(ed); r.collapse(false); sel.removeAllRanges(); sel.addRange(r); }
+  if(typeof document.execCommand==='function') document.execCommand('insertHTML',false,'<a href="'+href+'">'+txt+'</a>');
+}
+function addLink(){ openLinkModal(); }
+(function(){
+  // собрать список статей в модалке
+  var selEl=document.getElementById('linkArticle');
+  if(selEl){
+    for(var g=0; g<SITE_ARTICLES.length; g++){
+      var og=document.createElement('optgroup');
+      og.setAttribute('label', SITE_ARTICLES[g][0]);
+      for(var i=0; i<SITE_ARTICLES[g][1].length; i++){
+        var o=document.createElement('option');
+        o.value=SITE_ARTICLES[g][1][i][0];
+        o.textContent=SITE_ARTICLES[g][1][i][1];
+        og.appendChild(o);
+      }
+      selEl.appendChild(og);
+    }
+  }
+  var m=document.getElementById('linkModal');
+  if(m) m.addEventListener('click', function(e){ if(e.target===this) closeLinkModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLinkModal(); });
+})();
+function addAnchor(){
+  let id=prompt("ID анкора без пробелов, например pochemu-pahnet");
+  if(!id) return;
+  document.execCommand('insertHTML',false, `<span id="${id}"></span>`);
+}
+function addColor(){
+  let col=document.getElementById('colorPicker').value;
+  document.execCommand('foreColor',false,col);
+}
+function addTable(){
+  document.execCommand('insertHTML',false, `<table class="table-min"><tr><th>Что</th><th>Как</th><th>Чего нельзя</th></tr><tr><td>Кожа</td><td>Мягкое очищение pH 5.5</td><td>Не тереть до скрипа</td></tr></table><p></p>`);
+}
+function addNote(){
+  document.execCommand('insertHTML',false, `<div class="note"><strong>Важное:</strong> Не наносите на кожу уксус, соду, перекись без назначения.</div><p></p>`);
+}
+function addKstati(){
+  document.execCommand('insertHTML',false, `<div class="kstati"><b>Кстати</b>Человек перестает чувствовать свой запах через 20 минут из-за адаптации обоняния.</div><p></p>`);
+}
+function addButton(){
+  let txt=prompt("Текст кнопки:","Найти источник за 10 минут");
+  let url=prompt("Ссылка кнопки:","/kak-otlichit-istochnik-zapakha/");
+  if(txt&&url) document.execCommand('insertHTML',false, `<p><a href="${url}" style="display:inline-block; padding:10px 18px; border-radius:999px; background:#7A9AB8; color:white; text-decoration:none">${txt}</a></p>`);
+}
+function addImg(){
+  let src=prompt("Путь к картинке, например /images/hero-blue.jpg");
+  let alt=prompt("Alt на русском для SEO");
+  if(src) document.execCommand('insertHTML',false, `<div class="figure"><img src="${src}" alt="${alt||''}" loading="lazy"><figcaption>${alt||''}</figcaption></div><p></p>`);
+}
+
+// ===== v7.1: стиль и размер для ВЫДЕЛЕННОГО текста =====
+function currentBlock(){
+  var sel=window.getSelection();
+  if(!sel || !sel.rangeCount) return null;
+  var n=sel.getRangeAt(0).startContainer;
+  if(n.nodeType===3) n=n.parentNode;
+  var ed=document.getElementById('editor');
+  while(n && n!==ed){
+    if(/^(P|H1|H2|H3|H4|H5|H6|LI|DIV|BLOCKQUOTE|FIGCAPTION)$/.test(n.nodeName)) return n;
+    n=n.parentNode;
+  }
+  return null;
+}
+function wrapSelectionInSpan(cls){
+  var sel=window.getSelection();
+  if(!sel || !sel.rangeCount || sel.isCollapsed){ alert('Сначала выдели текст мышкой или пальцем, потом выбирай стиль'); return; }
+  try{
+    var range=sel.getRangeAt(0);
+    var span=document.createElement('span'); span.className=cls;
+    span.appendChild(range.extractContents());
+    range.insertNode(span);
+    sel.removeAllRanges();
+    var r2=document.createRange(); r2.selectNodeContents(span); sel.addRange(r2);
+  }catch(e){ alert('Не получилось — выдели текст внутри одного абзаца и попробуй снова'); }
+}
+function applyStyle(v){
+  if(!v) return;
+  document.getElementById('styleSel').selectedIndex=0;
+  var hasExec=typeof document.execCommand==='function';
+  if(v==='p'){
+    if(hasExec) document.execCommand('formatBlock',false,'p');
+    var b=currentBlock(); if(b) b.removeAttribute('class');
+  } else if(v==='lead'){
+    if(hasExec) document.execCommand('formatBlock',false,'p');
+    var b2=currentBlock(); if(b2) b2.className='lead';
+  } else if(v==='h2' || v==='h3'){
+    if(hasExec) document.execCommand('formatBlock',false,v);
+  } else if(v==='small'){
+    wrapSelectionInSpan('small muted');
+  }
+}
+function applySize(v){
+  if(!v) return;
+  document.getElementById('sizeSel').selectedIndex=0;
+  if(typeof document.execCommand==='function') document.execCommand('fontSize',false,v);
+}
+// размер из выпадающего списка превращаем в аккуратный span при сохранении
+var FONT_SIZE_MAP={'1':'12px','2':'14px','3':'16px','4':'18px','5':'22px','6':'26px','7':'30px'};
+function sanitizeHtml(html){
+  html=html.replace(/<font size="([1-7])"[^>]*>([\s\S]*?)<\/font>/g, function(m,s,inner){
+    return '<span style="font-size:'+(FONT_SIZE_MAP[s]||'16px')+'">'+inner+'</span>';
+  });
+  // v7.4: страховка при сохранении — чужие стили (CSS-переменные --tw-... и чужие шрифты
+  // font-family) на сайт не пускаем, даже если они как-то попали в редактор.
+  html=html.replace(/\sstyle="[^"]*(?:--|font-family)[^"]*"/gi,'');
+  // v7.4: скрипты и стили в текст статьи не переносим
+  html=html.replace(/<(script|style)\b[\s\S]*?<\/\1>/gi,'');
+  return html;
+}
+
+// ===== v7.4: чистка вставляемого текста =====
+// Когда копируешь текст из другого места (чат, Ворд, чужой сайт), вместе с ним
+// прилетают чужие оформления: стили, классы, шрифты. Здесь они вычищаются:
+// остаётся только структура — абзацы, заголовки, списки, ссылки.
+function cleanPastedHtml(html){
+  try{
+    var doc=new DOMParser().parseFromString('<div id="__paste">'+html+'</div>','text/html');
+    var root=doc.getElementById('__paste');
+    if(!root) return '';
+    root.querySelectorAll('script,style,iframe,object,embed,form,input,button,meta,link').forEach(function(el){ el.remove(); });
+    root.querySelectorAll('img').forEach(function(el){
+      var s=el.getAttribute('src')||'';
+      if(s.indexOf('/images/')!==0) el.remove(); // чужие и base64-картинки не переносим
+      else { el.removeAttribute('style'); el.removeAttribute('class'); }
+    });
+    root.querySelectorAll('*').forEach(function(el){
+      var keepHref=null, keepImg=null;
+      if(el.tagName==='A'){
+        var href=el.getAttribute('href')||'';
+        if(/^(https?:\/\/|mailto:|\/|#)/i.test(href)) keepHref=href;
+      }
+      if(el.tagName==='IMG'){
+        keepImg={src:el.getAttribute('src')||'', alt:el.getAttribute('alt')||''};
+      }
+      var attrs=Array.prototype.slice.call(el.attributes);
+      for(var i=0;i<attrs.length;i++) el.removeAttribute(attrs[i].name);
+      if(keepHref!==null) el.setAttribute('href',keepHref);
+      if(keepImg){ el.setAttribute('src',keepImg.src); el.setAttribute('alt',keepImg.alt); el.setAttribute('loading','lazy'); }
+    });
+    return root.innerHTML;
+  }catch(e){ return ''; }
+}
+
+// v7.4: вставка (Ctrl+V) и перетаскивание в редактор — только через чистку
+(function(){
+  var ed=document.getElementById('editor');
+  if(!ed) return;
+  function insertClean(e){
+    var cd=e.clipboardData||e.dataTransfer||window.clipboardData;
+    if(!cd) return;
+    e.preventDefault();
+    var html=cd.getData('text/html')||'';
+    var text=cd.getData('text/plain')||'';
+    var clean=html?cleanPastedHtml(html):'';
+    if(typeof document.execCommand!=='function') return;
+    if(clean) document.execCommand('insertHTML',false,clean);
+    else if(text) document.execCommand('insertText',false,text);
+  }
+  ed.addEventListener('paste',insertClean);
+  ed.addEventListener('drop',insertClean);
+})();
+// Enter после крупного заголовка → обычный текст, а не продолжение крупного
+(function(){
+  var ed=document.getElementById('editor');
+  ed.addEventListener('keydown', function(e){
+    if(e.key!=='Enter' || e.shiftKey) return;
+    var sel=window.getSelection();
+    if(!sel || !sel.rangeCount) return;
+    var n=sel.getRangeAt(0).startContainer;
+    if(n.nodeType===3) n=n.parentNode;
+    var inList=false, inHead=false, cur=n;
+    while(cur && cur!==ed){
+      if(cur.nodeName==='LI') inList=true;
+      if(/^H[1-6]$/.test(cur.nodeName)) inHead=true;
+      cur=cur.parentNode;
+    }
+    if(!inHead || inList) return;
+    e.preventDefault();
+    if(typeof document.execCommand==='function'){
+      document.execCommand('insertParagraph');
+      document.execCommand('formatBlock',false,'p');
+      var b=currentBlock(); if(b) b.removeAttribute('class');
+    }
+  });
+})();
+
+// ===== v7.2: поле H1 внизу ↔ первый заголовок в тексте — живая синхронизация =====
+// Печатаешь в поле — заголовок в тексте обновляется сразу (и появляется, если его нет).
+// А если правишь заголовок прямо в тексте — сохранится так, как видно в редакторе.
+(function(){
+  var f=document.getElementById('h1');
+  var ed=document.getElementById('editor');
+  f.addEventListener('input', function(){
+    var v=f.value.trim();
+    if(!v) return;
+    var h=ed.querySelector('h1');
+    if(h){ h.textContent=v; }
+    else{ var el=document.createElement('h1'); el.textContent=v; ed.insertBefore(el, ed.firstChild); }
+  });
+})();
+
+// ===== v7.1: загрузка картинки с компа/телефона =====
+// Сжимаем в браузере (до 1400px, JPEG ~82%) и заливаем прямо в /images/ репозитория
+var savedRange=null;
+function saveSel(){
+  var s=window.getSelection(); var ed=document.getElementById('editor');
+  if(s && s.rangeCount && ed.contains(s.getRangeAt(0).commonAncestorContainer)) savedRange=s.getRangeAt(0).cloneRange();
+}
+function restoreSel(){
+  var ed=document.getElementById('editor'); ed.focus();
+  var s=window.getSelection();
+  if(savedRange && s){ s.removeAllRanges(); s.addRange(savedRange); return; }
+  var r=document.createRange(); r.selectNodeContents(ed); r.collapse(false);
+  if(s){ s.removeAllRanges(); s.addRange(r); }
+}
+function autoImgName(){
+  var d=new Date();
+  function p2(x){ return (x<10?'0':'')+x; }
+  return 'img-'+d.getFullYear()+p2(d.getMonth()+1)+p2(d.getDate())+'-'+p2(d.getHours())+p2(d.getMinutes())+'.jpg';
+}
+function compressImage(file, maxSide, quality){
+  return new Promise(function(resolve, reject){
+    var img=new Image();
+    var url=URL.createObjectURL(file);
+    img.onload=function(){
+      try{
+        var w=img.naturalWidth||img.width, h=img.naturalHeight||img.height;
+        if(!w || !h){ reject(new Error('Картинка пустая')); return; }
+        var k=Math.min(1, maxSide/Math.max(w,h));
+        var c=document.createElement('canvas');
+        c.width=Math.round(w*k); c.height=Math.round(h*k);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        var dataUrl;
+        try{ dataUrl=c.toDataURL('image/jpeg', quality); }
+        catch(err){ reject(new Error('Браузер запретил обработку — открой конструктор на сайте zapahstarosti.ru или скачанным файлом')); return; }
+        URL.revokeObjectURL(url);
+        resolve(dataUrl);
+      }catch(e){ reject(e); }
+    };
+    img.onerror=function(){ URL.revokeObjectURL(url); reject(new Error('Файл не читается как картинка. Если это HEIC с iPhone — открой Фото → Поделиться → Дублировать как JPG, или сфотографируй заново')); };
+    img.src=url;
+  });
+}
+async function uploadImgFromFile(file){
+  var status=document.getElementById('status');
+  if(!file) return;
+  var token=document.getElementById('token').value.trim();
+  if(!token){ alert('Чтобы залить картинку на сайт, нужен токен GitHub (поле вверху)'); return; }
+  status.textContent='Обрабатываю картинку ('+Math.round(file.size/1024)+' КБ)…';
+  try{
+    var dataUrl=await compressImage(file, 1400, 0.82);
+    var b64=dataUrl.split(',')[1];
+    var kb=Math.round(b64.length*3/4/1024);
+    var name=prompt('Имя файла латиницей — ляжет в /images/ сайта:', autoImgName());
+    if(!name){ status.textContent='Загрузка картинки отменена.'; return; }
+    if(!/^[a-z0-9-_.]+$/i.test(name)){ status.textContent='Имя только латиницей, цифрами и дефисами'; return; }
+    if(!/\.(jpe?g|png|webp)$/i.test(name)) name+='.jpg';
+    var owner=document.getElementById('owner').value.trim();
+    var repo=document.getElementById('repo').value.trim();
+    var branch=document.getElementById('branch').value.trim()||'main';
+    var sha=null;
+    var ex=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/contents/images/'+name+'?ref='+branch, {headers:{Authorization:'token '+token}});
+    if(ex.ok){
+      sha=(await ex.json()).sha;
+      if(!confirm('/images/'+name+' уже существует. Заменить?')){ status.textContent='Загрузка отменена.'; return; }
+    }
+    status.textContent='Заливаю на GitHub: images/'+name+' (после сжатия ~'+kb+' КБ)…';
+    var body={message:'upload image '+name+' via constructor v7', content:b64, branch:branch};
+    if(sha) body.sha=sha;
+    var res=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/contents/images/'+name, {method:'PUT', headers:{Authorization:'token '+token, 'Content-Type':'application/json'}, body:JSON.stringify(body)});
+    if(!res.ok) throw new Error(await res.text());
+    var alt=prompt('Подпись под фото / alt на русском (для SEO, можно оставить пустым):','')||'';
+    restoreSel();
+    if(typeof document.execCommand==='function'){
+      document.execCommand('insertHTML',false, '<div class="figure"><img src="/images/'+name+'" alt="'+alt+'" loading="lazy"><figcaption>'+alt+'</figcaption></div><p></p>');
+    }
+    status.textContent='✅ Картинка залита: /images/'+name+' (~'+kb+' КБ). На сайте появится через 1–10 минут (кэш GitHub).';
+  }catch(e){ status.textContent='Ошибка загрузки картинки: '+(e.message||e); }
+}
+function pickImgFromDevice(){
+  saveSel();
+  var f=document.getElementById('imgFile');
+  f.value='';
+  f.click();
+}
+(function(){
+  var f=document.getElementById('imgFile');
+  if(f) f.addEventListener('change', function(){ uploadImgFromFile(this.files && this.files[0]); });
+})();
+
+let currentSha=null, currentSlug=null, originalHtml=null;
+
+async function load(){
+  let slug=document.getElementById('slug').value.trim();
+  if(!slug){ alert("Выбери статью"); return; }
+  let status=document.getElementById('status');
+  status.textContent="Гружу /"+slug+"/index.html ...";
+  try{
+    // v7: абсолютный адрес если открыто не на сайте + обход кэша GitHub Pages (10 мин)
+    let res=await fetch(BASE+"/"+slug+"/index.html?t="+Date.now(), ON_WEB?{cache:'no-store'}:{mode:'cors'});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    let html=await res.text();
+    let parser=new DOMParser();
+    let doc=parser.parseFromString(html,"text/html");
+    let contentEl=doc.querySelector(".content");
+    if(!contentEl) throw new Error("В странице нет блока .content");
+    document.getElementById('editor').innerHTML=contentEl.innerHTML;
+    // v7: разбор через DOMParser — надежнее регексов
+    let tEl=doc.querySelector("title"); if(tEl) document.getElementById('title').value=tEl.textContent.trim();
+    let dEl=doc.querySelector('meta[name="description"]'); if(dEl) document.getElementById('desc').value=dEl.getAttribute("content")||'';
+    let h1El=doc.querySelector(".content h1")||doc.querySelector("h1");
+    if(h1El) document.getElementById('h1').value=h1El.textContent.trim();
+    // v7: галочка noindex отражает реальное состояние страницы
+    let robots=doc.querySelector('meta[name="robots"]');
+    document.getElementById('noindexBox').checked = !!(robots && /noindex/i.test(robots.getAttribute("content")||''));
+    originalHtml=html; currentSlug=slug; currentSha=null;
+    status.textContent="✅ Открыто: "+slug+" — "+contentEl.innerHTML.length+" симв. Можно править и копировать."+(ON_WEB?"":" (гружу с живого сайта — ты открыла конструктор не на zapahstarosti.ru)");
+    // получить sha для сохранения если токен есть
+    let owner=document.getElementById('owner').value.trim();
+    let repo=document.getElementById('repo').value.trim();
+    let branch=document.getElementById('branch').value.trim()||'main';
+    let token=document.getElementById('token').value.trim();
+    if(token){
+      try{
+        let apiRes=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${slug}/index.html?ref=${branch}`,{headers:{Authorization:`token ${token}`}});
+        if(apiRes.ok){ let d=await apiRes.json(); currentSha=d.sha; }
+      }catch(e){}
+    }
+  }catch(e){
+    document.getElementById('status').textContent="Ошибка: "+e.message+(ON_WEB?"":"\nОткрыто не на сайте — статью беру с https://zapahstarosti.ru. Если не вышло, проверь интернет или открой конструктор на сайте.");
+  }
+}
+
+// ===== v7: главное исправление сохранения =====
+// Существующая страница НЕ пересобирается по шаблону: правки вшиваются в её собственный
+// HTML. Меню, favicon, метрика, верификация и noindex остаются ровно как были.
+function buildFromOriginal(slug){
+  // v7.4: блок Яндекс.Метрики НЕ пропускаем через DOMParser. Разборщик без скриптов
+  // всегда выбрасывает <div> из <noscript> в <body> — счётчик ломается (пиксель
+  // грузится у всех, визиты считаются вдвое). Вырезаем блок до разбора и вставляем
+  // обратно эталонный после — заодно чинятся страницы, сохранённые старыми версиями.
+  var srcHtml=originalHtml, hasMet=false;
+  var MO='<!-- Yandex.Metrika counter -->', MC='<!-- /Yandex.Metrika counter -->';
+  var i1=srcHtml.indexOf(MO), i2=srcHtml.indexOf(MC);
+  if(i1>=0 && i2>i1){ srcHtml=srcHtml.slice(0,i1)+'<!--ZAPMETRIKA-->'+srcHtml.slice(i2+MC.length); hasMet=true; }
+  let parser=new DOMParser();
+  let doc=parser.parseFromString(srcHtml,"text/html");
+  let title=document.getElementById('title').value.trim();
+  let desc=document.getElementById('desc').value.trim();
+  let h1v=document.getElementById('h1').value.trim();
+  if(title){ let t=doc.querySelector("title"); if(t) t.textContent=title; }
+  if(desc){ let m=doc.querySelector('meta[name="description"]'); if(m) m.setAttribute("content",desc); }
+  let canon=doc.querySelector('link[rel="canonical"]');
+  if(canon) canon.setAttribute("href",`https://zapahstarosti.ru/${slug}/`);
+  let content=doc.querySelector(".content");
+  if(!content) throw new Error("В исходной странице нет .content");
+  content.innerHTML=sanitizeHtml(document.getElementById('editor').innerHTML);
+  // v7.2: H1 — что видно в редакторе, то и сохраняется. Ровно один:
+  // лишние убираем, а если в тексте его нет — берём из поля внизу и ставим первым.
+  var h1s=content.querySelectorAll("h1");
+  if(h1s.length===0){
+    var hv=h1v||title||'';
+    if(hv){ var nh=doc.createElement("h1"); nh.innerHTML=hv; content.insertBefore(nh, content.firstChild); }
+  } else {
+    for(var hi=1; hi<h1s.length; hi++) h1s[hi].remove();
+  }
+  // noindex по галочке
+  let robots=doc.querySelector('meta[name="robots"]');
+  if(document.getElementById('noindexBox').checked){
+    if(!robots){ robots=doc.createElement("meta"); robots.setAttribute("name","robots"); doc.head.appendChild(robots); }
+    robots.setAttribute("content","noindex, nofollow");
+  } else if(robots){ robots.remove(); }
+  var out="<!DOCTYPE html>\n"+doc.documentElement.outerHTML;
+  if(hasMet) out=out.replace('<!--ZAPMETRIKA-->', function(){ return METRIKA_HEAD; });
+  return out;
+}
+
+// ===== v7: ГЛАВНЫЙ ФИКС =====
+// Внутри JS-строк нельзя держать сырые закрывающие теги script и html-комментарии —
+// браузер закрывает скрипт посередине и ВСЁ умирает (SyntaxError). Поэтому собираем из кусочков.
+var SCR_OPEN='<scr'+'ipt type="text/javascript">';
+var SCR_CLOSE='</scr'+'ipt>';
+var CMT_OPEN='<'+'!-- Yandex.Metrika counter '+'-->';
+var CMT_CLOSE='<'+'!-- /Yandex.Metrika counter '+'-->';
+var METRIKA_HEAD=CMT_OPEN+SCR_OPEN+'(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments);};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, \'script\', \'https://mc.yandex.ru/metrika/tag.js?id=111871686\', \'ym\');ym(111871686, \'init\', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});'+SCR_CLOSE+'<noscript><div><img src="https://mc.yandex.ru/watch/111871686" style="position:absolute; left:-9999px;" alt="" /></div></noscript>'+CMT_CLOSE;
+var DROPDOWN_JS='<scr'+'ipt>'+"\ndocument.addEventListener('click', function(e){\n  const toggle = e.target.closest('.dropdown-toggle');\n  if(toggle){\n    e.preventDefault();\n    const dd = toggle.closest('.dropdown');\n    const isOpen = dd.classList.contains('open');\n    document.querySelectorAll('.dropdown.open').forEach(d=>d.classList.remove('open'));\n    if(!isOpen) dd.classList.add('open');\n  } else {\n    if(!e.target.closest('.dropdown')){\n      document.querySelectorAll('.dropdown.open').forEach(d=>d.classList.remove('open'));\n    }\n  }\n});\n"+'</scr'+'ipt>';
+
+// Полное настоящее меню сайта — для НОВЫХ страниц (v7: все пункты, как на сайте)
+var FULL_NAV = `<nav class="nav sans">
+<a href="/">Главная</a>
+<div class="dropdown">
+<a class="dropdown-toggle" href="/kak-otlichit-istochnik-zapakha/">Диагностика</a>
+<div class="dropdown-menu">
+<a href="/kak-otlichit-istochnik-zapakha/">Найти источник за 10 минут</a>
+<a href="/kviz/">Квиз: где источник?</a>
+<a href="/karta-kvartiry/">Карта квартиры</a>
+<a href="/material-metod/">Таблица материал-метод</a>
+</div>
+</div>
+<a href="/chto-takoe-2-nonenal/">2-ноненаль</a>
+<div class="dropdown">
+<a class="dropdown-toggle" href="/ubrat-zapah/">Тело</a>
+<div class="dropdown-menu">
+<a href="/ubrat-zapah/">Как уменьшить запах тела</a>
+<a href="/odezhda-i-tekstil/">Одежда и текстиль</a>
+<a href="/lekarstva-i-zapah/">Лекарства и запах</a>
+<a href="/kogda-k-vrachu/">Когда к врачу</a>
+<a href="/kak-pogovorit-s-blizkim/">Как поговорить с близким</a>
+</div>
+</div>
+<div class="dropdown">
+<a class="dropdown-toggle" href="/zapah-v-kvartire/">Квартира</a>
+<div class="dropdown-menu">
+<a href="/zapah-v-kvartire/">Общая карта</a>
+<a href="/kak-ubrat-zapah-s-matrasa/">Матрас</a>
+<a href="/kak-ubrat-zapah-s-divana/">Диван</a>
+<a href="/kak-ubrat-zapah-iz-shkafa/">Шкаф и ящики</a>
+<a href="/kak-ubrat-zapah-v-stiralnoj-mashine/">Стиральная машина</a>
+<a href="/kak-ubrat-zapah-v-sanuzle/">Санузел</a>
+<a href="/ventilyatsiya-i-vlazhnost/">Вентиляция и влажность</a>
+</div>
+</div>
+<div class="dropdown">
+<a class="dropdown-toggle" href="/sredstva-ot-zapaha/">Средства</a>
+<div class="dropdown-menu">
+<a href="/sredstva-ot-zapaha/">Что нейтрализует, а что маскирует</a>
+<a href="/poroshok-dlya-tekstila/">Порошок для текстиля</a>
+<a href="/tonik-protirka/">Тоник и протирка</a>
+<a href="/nabor/">Набор Тело+текстиль</a>
+<a href="/ochistitel-vozduha/">Очиститель, пароочиститель, озонатор</a>
+</div>
+</div>
+<div class="dropdown">
+<a class="dropdown-toggle" href="/o-proekte/">О проекте</a>
+<div class="dropdown-menu">
+<a href="/o-proekte/">О проекте</a>
+<a href="/karta-osetii/">Карта Осетии — где собираем кору</a>
+<a href="/faq/">FAQ — 20 ответов</a>
+</div>
+</div>
+<a href="/constructor-v5.html" id="adminLink" style="display:none; color:#7A9AB8; border:1px dashed #DCE8F5; padding:4px 10px; border-radius:999px">Конструктор</a>
+</nav>`;
+
+function buildNewPage(slug){
+  let title=document.getElementById('title').value||'Новая статья';
+  let desc=document.getElementById('desc').value||'';
+  let h1=document.getElementById('h1').value||title;
+  let body=sanitizeHtml(document.getElementById('editor').innerHTML);
+  // v7.2: H1 — если в тексте уже есть, второй не ставим; лишние убираем, остаётся первый
+  var h1ms=body.match(/<h1[^>]*>[\s\S]*?<\/h1>/gi);
+  if(h1ms && h1ms.length>1){
+    body=body.replace(/<h1[^>]*>[\s\S]*?<\/h1>/gi,'');
+    body=h1ms[0]+'\n'+body;
+  }
+  if(!/<h1[\s>]/i.test(body)) body='<h1>'+h1+'</h1>\n'+body;
+  let today=new Date().toLocaleDateString('ru-RU');
+  let robotsLine=document.getElementById('noindexBox').checked?'\n<meta name="robots" content="noindex, nofollow">':'';
+  // v7.5: OG-теги + JSON-LD для НОВЫХ страниц (существующие правки сохраняют свои в buildFromOriginal)
+  // Картинка — общая (home.jpg), всегда существует. Уникальную карточку под новую страницу
+  // можно сгенерировать отдельно и поправить og:image вручную.
+  let ogimg='https://zapahstarosti.ru/images/og/home.jpg';
+  let ogq=function(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');};
+  let OG_META='<!--OG-START-->\n'
+   +'<meta property="og:type" content="website">\n'
+   +'<meta property="og:site_name" content="Запах старости — научно-практический ресурс">\n'
+   +'<meta property="og:locale" content="ru_RU">\n'
+   +'<meta property="og:title" content="'+ogq(title)+'">\n'
+   +'<meta property="og:description" content="'+ogq(desc)+'">\n'
+   +'<meta property="og:url" content="https://zapahstarosti.ru/'+slug+'/">\n'
+   +'<meta property="og:image" content="'+ogimg+'">\n'
+   +'<meta property="og:image:width" content="1200">\n'
+   +'<meta property="og:image:height" content="630">\n'
+   +'<meta property="og:image:alt" content="'+ogq(title)+'">\n'
+   +'<meta name="twitter:card" content="summary_large_image">\n'
+   +'<!--OG-END-->\n';
+  let OG_JSON='<!--JSONLD-START-->\n'
+   +'<scr'+'ipt type="application/ld+json">\n'
+   +JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":title,"description":desc,"url":"https://zapahstarosti.ru/"+slug+"/","inLanguage":"ru","image":ogimg,"author":{"@type":"Person","name":"Инна Кучиева","url":"https://zapahstarosti.ru/o-proekte/"},"publisher":{"@type":"Organization","name":"запах старости.ru","url":"https://zapahstarosti.ru"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://zapahstarosti.ru/"+slug+"/"}},null,2)
+   +'\n</scr'+'ipt>\n<!--JSONLD-END-->\n';
+  return `<!DOCTYPE html><html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="yandex-verification" content="e3e7231de3258122" />${robotsLine}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${title}</title>
+<meta name="description" content="${desc}">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+<link rel="canonical" href="https://zapahstarosti.ru/${slug}/"><link rel="stylesheet" href="/style.css?v=6">
+${OG_META}${OG_JSON}${METRIKA_HEAD}
+</head><body>
+<header class="header"><div class="container header-inner">
+<a class="logo" href="/">запах <em>старости</em>.ru</a>
+${FULL_NAV}
+</div></header>
+<main class="container"><div class="content" style="padding-top:48px">
+${body}
+<p class="small muted sans">Обновлено ${today}.</p>
+</div></main>
+<footer class="footer"><div class="container"><div class="content small">© 2026 • <a href="/">Главная</a> • <a href="/o-proekte/">О проекте</a></div></div></footer>
+${DROPDOWN_JS}
+</body></html>`;
+}
+
+function buildHtml(slug){
+  if(originalHtml && currentSlug===slug) return buildFromOriginal(slug);
+  if(originalHtml) return buildFromOriginal(slug); // копия в новый slug — тоже на базе оригинала
+  return buildNewPage(slug);
+}
+
+async function save(){
+  let owner=document.getElementById('owner').value.trim();
+  let repo=document.getElementById('repo').value.trim();
+  let branch=document.getElementById('branch').value.trim()||'main';
+  let token=document.getElementById('token').value.trim();
+  let slug=currentSlug||document.getElementById('slug').value;
+  if(!token||!slug){ alert("Нужен токен и открытая статья"); return; }
+  let full;
+  try{ full=buildHtml(slug); }
+  catch(e){ document.getElementById('status').textContent="Ошибка сборки: "+e.message; return; }
+  let b64=btoa(unescape(encodeURIComponent(full)));
+  document.getElementById('status').textContent="Сохраняю "+slug+"...";
+  try{
+    if(!currentSha){
+      let r=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${slug}/index.html?ref=${branch}`,{headers:{Authorization:`token ${token}`}});
+      if(r.ok){ let d=await r.json(); currentSha=d.sha; }
+    }
+    let body={message:`update ${slug} via constructor v7`, content:b64, branch:branch};
+    if(currentSha) body.sha=currentSha;
+    let res=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${slug}/index.html`,{method:"PUT", headers:{Authorization:`token ${token}`, "Content-Type":"application/json"}, body:JSON.stringify(body)});
+    if(!res.ok) throw new Error(await res.text());
+    let data=await res.json();
+    currentSha=data.content.sha;
+    originalHtml=full; // v7: дальше правим уже сохраненную версию
+    document.getElementById('status').textContent="✅ Сохранено! https://zapahstarosti.ru/"+slug+"/ (кэш GitHub до 10 минут)"+(document.getElementById('noindexBox').checked?" • страница СКРЫТА noindex":" • страница ОТКРЫТА для индексации");
+  }catch(e){ document.getElementById('status').textContent="Ошибка: "+e.message; }
+}
+
+async function copyPage(){
+  let owner=document.getElementById('owner').value.trim();
+  let repo=document.getElementById('repo').value.trim();
+  let branch=document.getElementById('branch').value.trim()||'main';
+  let token=document.getElementById('token').value.trim();
+  if(!token){ alert("Нужен токен для копирования"); return; }
+  let newSlug=document.getElementById('newSlug').value.trim() || prompt("Новый slug для копии, например: kak-ubrat-zapah-iz-obuvi");
+  if(!newSlug) return;
+  // v7: новая страница по умолчанию скрыта noindex — спросим, если вдруг хотят открыть сразу
+  if(!document.getElementById('noindexBox').checked){
+    if(!confirm("Сейчас галочка noindex СНЯТА — новая страница сразу попадет в индекс.\n\nОК = создать открытой.\nОтмена = создать скрытой noindex (рекомендую, публикация по плану).")){
+      document.getElementById('noindexBox').checked=true;
+    }
+  }
+  let full;
+  try{ full=buildHtml(newSlug); }
+  catch(e){ document.getElementById('status').textContent="Ошибка сборки: "+e.message; return; }
+  let b64=btoa(unescape(encodeURIComponent(full)));
+  document.getElementById('status').textContent="Копирую в "+newSlug+"...";
+  try{
+    // v7: если страница уже существует — спросим и возьмем sha (раньше было ошибкой 422)
+    let ex=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${newSlug}/index.html?ref=${branch}`,{headers:{Authorization:`token ${token}`}});
+    let sha=null;
+    if(ex.ok){
+      let d=await ex.json(); sha=d.sha;
+      if(!confirm("/"+newSlug+"/ уже существует. Перезаписать?")){ document.getElementById('status').textContent="Отменено."; return; }
+    }
+    let body={message:`copy ${currentSlug||''} to ${newSlug} via constructor v7`, content:b64, branch:branch};
+    if(sha) body.sha=sha;
+    let res=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${newSlug}/index.html`,{
+      method:"PUT",
+      headers:{Authorization:`token ${token}`, "Content-Type":"application/json"},
+      body:JSON.stringify(body)
+    });
+    if(!res.ok) throw new Error(await res.text());
+    document.getElementById('status').textContent="✅ Скопировано! Новая страница: https://zapahstarosti.ru/"+newSlug+"/ — добавь ее в меню и sitemap.xml"+(document.getElementById('noindexBox').checked?" • создана СКРЫТОЙ noindex":"");
+  }catch(e){ document.getElementById('status').textContent="Ошибка копирования: "+e.message; }
+}
+
+function download(){
+  let slug=document.getElementById('newSlug').value.trim()||currentSlug||document.getElementById('slug').value||'novaya';
+  let full;
+  try{ full=buildHtml(slug); }
+  catch(e){ document.getElementById('status').textContent="Ошибка сборки: "+e.message; return; }
+  let blob=new Blob([full],{type:'text/html'});
+  let a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='index.html'; a.click();
+}
+</script>
+</body></html>
