@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-19T12:16:35+00:00",
+  "checked_at_utc": "2026-09-19T20:44:13+00:00",
   "archive_base_commit": "006572c7fd9da15bd68a8bc0c626f9b5846af68e",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "d1d4dc7627609d756247e9901a5cbf6f6b72d5c7",
+  "source_commit": "ab7821496e69e0476dd0e4d922749a3a6d6edd7e",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений.",
+  "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Правка текста 19.09 (температура стирки) учтена в хешах; это снимок опубликованного сайта, а не одобрение научных утверждений.",
   "source_files": [
     {
       "path": "CNAME",
@@ -55,7 +55,7 @@
     {
       "path": "faq/index.html",
       "bytes": 29257,
-      "sha256": "4b064d7231575b430ecdd2fb893f9669009b262e4ab0f8070d71212ef1c2c834"
+      "sha256": "c14b25c44c7276b05a80374e2ed60aab86539ec51a6afdca778cac1d16003cd4"
     },
     {
       "path": "favicon.ico",
@@ -415,7 +415,7 @@
     {
       "path": "poroshok-dlya-tekstila/index.html",
       "bytes": 23977,
-      "sha256": "05a40ac7ff4077a4e5ae2ddd55150e76c5d0435afdb8bcabd6f141198f0e8bf0"
+      "sha256": "e9b7ca08747578fbd8aaee381f7a976ea383efb64ed4f93b69b3f3493b9cc1a6"
     },
     {
       "path": "robots.txt",
@@ -435,7 +435,7 @@
     {
       "path": "sredstva-ot-zapaha/index.html",
       "bytes": 24235,
-      "sha256": "8d0ed1a62810eb634a52cf0d1d00959cd4ab13436c306653edd0093e613929b1"
+      "sha256": "7a8c03a371de5008ff8a3ea9095c23d557ce1fd7f19a08231cf3760059c5c7e5"
     },
     {
       "path": "style.css",
@@ -1423,5 +1423,24 @@
     "ventilyatsiya-i-vlazhnost/index.html",
     "zapah-v-kvartire/index.html"
   ],
-  "production_writes": false
+  "production_writes": false,
+  "site_fix_2026_09_19": {
+    "what": "Исправлено противоречие по температуре стирки: разделены линейки 60 °C без ферментов и 35–45 °C с ферментами",
+    "commit": "ab7821496e69e0476dd0e4d922749a3a6d6edd7e",
+    "commit_url": "https://github.com/ooppanki2021-hash/zapahstarosti/commit/ab7821496e69e0476dd0e4d922749a3a6d6edd7e",
+    "previous_source_commit": "d1d4dc7627609d756247e9901a5cbf6f6b72d5c7",
+    "files": [
+      "poroshok-dlya-tekstila/index.html",
+      "faq/index.html",
+      "sredstva-ot-zapaha/index.html"
+    ],
+    "files_count": 3,
+    "files_in_repo_before": 93,
+    "files_in_repo_after": 93,
+    "deleted": 0,
+    "force": false,
+    "live_verified": true,
+    "verified_at_utc": "2026-09-19T20:44:13+00:00",
+    "note": "Проверено по живым страницам: старые формулировки отсутствуют, новые на месте. Правки касаются текста, а не рецептур."
+  }
 }

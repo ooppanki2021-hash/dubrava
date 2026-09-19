@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "date": "2026-09-19",
-  "generated_at_utc": "2026-09-19T12:30:51+00:00",
+  "generated_at_utc": "2026-09-19T20:44:47+00:00",
   "base_commit": "006572c7fd9da15bd68a8bc0c626f9b5846af68e",
   "repository": "https://github.com/ooppanki2021-hash/dubrava",
-  "purpose": "Согласованная актуализация существующего архива без удаления; обычный коммит с сохранением родителя. Рабочий сайт и видимость не меняются.",
+  "purpose": "Согласованная актуализация существующего архива без удаления; обычный коммит с сохранением родителя. Видимость репозитория не меняется. Правка текста на рабочем сайте 19.09 учтена в снимке и в 03-сайт/СВЕРКА_ПУБЛИКАЦИИ.json (site_fix_2026_09_19).",
   "counts": {
     "original_files": 145,
     "original_files_preserved": 145,
@@ -27,9 +27,9 @@
     {
       "path": "01_НАЧНИ_ОТСЮДА/ИСТОРИЯ_РЕШЕНИЙ.md",
       "before_sha256": "7aacae123e503040715a181013801a95ad195ed2878819a20422c92ceafa9790",
-      "after_sha256": "1c0c7a0930e8c33748c38c5bd0a62267ddca9e7e64de14cbaed05ec4dfa53ca7",
+      "after_sha256": "5e6e4d7b13adc8ad49f7f971f0c109f6e4847642db815d7018bbf2f102cfea1d",
       "before_bytes": 21998,
-      "after_bytes": 27118,
+      "after_bytes": 30516,
       "status": "modified"
     },
     {
@@ -139,9 +139,9 @@
     {
       "path": "02_документы_проекта/РЕЗЮМЕ_ПРОЕКТА.md",
       "before_sha256": "01e863f7cf2c8de7e27fcccca936c3d80835cab77eea718ea0935882c186ffaf",
-      "after_sha256": "0810e8522c05d4f63c41c1870918c4d2d2deda13e7c29edd3dff8d2c930cd890",
+      "after_sha256": "0f581fbeb790d4ab61ff22d50f0fd56aca93ed1810eb630055f86cc948a229ae",
       "before_bytes": 53271,
-      "after_bytes": 66770,
+      "after_bytes": 66955,
       "status": "modified"
     },
     {
@@ -227,9 +227,9 @@
     {
       "path": "03-сайт/сайт_текущий/faq/index.html",
       "before_sha256": "fd58e9de77286189730d69e12a960d89761021cf201e6eeac3ecd89c69198de2",
-      "after_sha256": "4b064d7231575b430ecdd2fb893f9669009b262e4ab0f8070d71212ef1c2c834",
+      "after_sha256": "c14b25c44c7276b05a80374e2ed60aab86539ec51a6afdca778cac1d16003cd4",
       "before_bytes": 14951,
-      "after_bytes": 29257,
+      "after_bytes": 30451,
       "status": "modified"
     },
     {
@@ -803,9 +803,9 @@
     {
       "path": "03-сайт/сайт_текущий/poroshok-dlya-tekstila/index.html",
       "before_sha256": "2bf37f5bac3f482a40fa5050b8a10cf7bd7f995a6f7918a9e073aa7f178fa8af",
-      "after_sha256": "05a40ac7ff4077a4e5ae2ddd55150e76c5d0435afdb8bcabd6f141198f0e8bf0",
+      "after_sha256": "e9b7ca08747578fbd8aaee381f7a976ea383efb64ed4f93b69b3f3493b9cc1a6",
       "before_bytes": 10829,
-      "after_bytes": 23977,
+      "after_bytes": 24713,
       "status": "modified"
     },
     {
@@ -835,9 +835,9 @@
     {
       "path": "03-сайт/сайт_текущий/sredstva-ot-zapaha/index.html",
       "before_sha256": "0a52f46d9670af50a60c23b9ca21713af667e70a23224a75b0cec9db81fdd784",
-      "after_sha256": "8d0ed1a62810eb634a52cf0d1d00959cd4ab13436c306653edd0093e613929b1",
+      "after_sha256": "7a8c03a371de5008ff8a3ea9095c23d557ce1fd7f19a08231cf3760059c5c7e5",
       "before_bytes": 15028,
-      "after_bytes": 24235,
+      "after_bytes": 24522,
       "status": "modified"
     },
     {
@@ -1163,9 +1163,9 @@
     {
       "path": "README.md",
       "before_sha256": "65119291b45c25a2b79b20e9d1c2e3a66e2491b907d2e16f3772ea845a712696",
-      "after_sha256": "8c55864145d561f1278c5285ddbbf8facc548459c281de59065ff47bedf02620",
+      "after_sha256": "a2894de4af95dfca8ae1cc94ec99057cd53345f9e71c20a7759342e2e23fa081",
       "before_bytes": 6997,
-      "after_bytes": 9170,
+      "after_bytes": 9375,
       "status": "modified"
     },
     {
@@ -1184,8 +1184,8 @@
     },
     {
       "path": "03-сайт/СВЕРКА_ПУБЛИКАЦИИ.json",
-      "sha256": "8212270e76e374287de19cbc1becd6aef3edc4b61527f0027602aa07a3b4a607",
-      "bytes": 50987
+      "sha256": "ef184664830313ddaf502ee1de73eed4436f9a4397e90b6c0bca45be2df9bea2",
+      "bytes": 52265
     },
     {
       "path": "06_справочные/проверить_архив.py",
