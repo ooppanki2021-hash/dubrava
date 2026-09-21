@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "date": "2026-09-19",
-  "generated_at_utc": "2026-09-19T20:44:47+00:00",
+  "generated_at_utc": "2026-09-21T20:55:31+00:00",
   "base_commit": "006572c7fd9da15bd68a8bc0c626f9b5846af68e",
   "repository": "https://github.com/ooppanki2021-hash/dubrava",
-  "purpose": "Согласованная актуализация существующего архива без удаления; обычный коммит с сохранением родителя. Видимость репозитория не меняется. Правка текста на рабочем сайте 19.09 учтена в снимке и в 03-сайт/СВЕРКА_ПУБЛИКАЦИИ.json (site_fix_2026_09_19).",
+  "purpose": "Согласованная актуализация существующего архива без удаления; обычный коммит с сохранением родителя. Видимость репозитория не меняется. Правка текста на рабочем сайте 19.09 учтена в снимке и в 03-сайт/СВЕРКА_ПУБЛИКАЦИИ.json (site_fix_2026_09_19). Синхронизация разметки сайта 21.09.2026 учтена: хеши изменённых файлов снимка и документов пересчитаны, удалений и новых файлов нет.",
   "counts": {
     "original_files": 145,
     "original_files_preserved": 145,
@@ -27,9 +27,9 @@
     {
       "path": "01_НАЧНИ_ОТСЮДА/ИСТОРИЯ_РЕШЕНИЙ.md",
       "before_sha256": "7aacae123e503040715a181013801a95ad195ed2878819a20422c92ceafa9790",
-      "after_sha256": "5e6e4d7b13adc8ad49f7f971f0c109f6e4847642db815d7018bbf2f102cfea1d",
+      "after_sha256": "23305c3f40a5de23702397c5d63a31e239047656babd2741e44cad8a0ec0d663",
       "before_bytes": 21998,
-      "after_bytes": 30516,
+      "after_bytes": 33930,
       "status": "modified"
     },
     {
@@ -59,9 +59,9 @@
     {
       "path": "02_документы_проекта/АУДИТ_САЙТА.md",
       "before_sha256": "09f082b92f15490dd1a16eb0b077d19e50b8651a0a420e2f72c412d87687a78d",
-      "after_sha256": "317fcca6be2569ebf276b7e63a9de2e7a56c74b6a168533fcf86b3a2120fe844",
+      "after_sha256": "969151c37571ddeca76273d32e1f56185962d161424fa49c61ea91a63e5764c7",
       "before_bytes": 14974,
-      "after_bytes": 20481,
+      "after_bytes": 20878,
       "status": "modified"
     },
     {
@@ -139,9 +139,9 @@
     {
       "path": "02_документы_проекта/РЕЗЮМЕ_ПРОЕКТА.md",
       "before_sha256": "01e863f7cf2c8de7e27fcccca936c3d80835cab77eea718ea0935882c186ffaf",
-      "after_sha256": "0f581fbeb790d4ab61ff22d50f0fd56aca93ed1810eb630055f86cc948a229ae",
+      "after_sha256": "730169e5b2ff967e4f8d4b0324876eb97f0c8256b9f31f9f4d22c4c06c80729e",
       "before_bytes": 53271,
-      "after_bytes": 66955,
+      "after_bytes": 67479,
       "status": "modified"
     },
     {
@@ -155,9 +155,9 @@
     {
       "path": "03-сайт/сайт_текущий/README.md",
       "before_sha256": "def52c78004b0029bc0232bd9ff2c404a508b0368f57a52517569e88ae9c8ca5",
-      "after_sha256": "7b4252af6c6154b61eb0bf3f483fe0c45431a61bcf258d207690f4fea619154f",
+      "after_sha256": "f2026c842f104d9c5c07d3064a882c4b44bc101ef7ac47778c5f5dae1d886442",
       "before_bytes": 15,
-      "after_bytes": 2645,
+      "after_bytes": 2932,
       "status": "modified"
     },
     {
@@ -211,9 +211,9 @@
     {
       "path": "03-сайт/сайт_текущий/chto-takoe-2-nonenal/index.html",
       "before_sha256": "b38564f46540af8e93cd59332de5ad67af2fc889d923248a3071d42518eb36e2",
-      "after_sha256": "09b33a02dbad600c6ec95804a561e986f6790d89956515ba24b12056318aca79",
+      "after_sha256": "be4acfd4ee2f14a93ff8e5e7054369f738e3692026eb03ab7a817f10663311bd",
       "before_bytes": 31563,
-      "after_bytes": 36455,
+      "after_bytes": 38339,
       "status": "modified"
     },
     {
@@ -227,9 +227,9 @@
     {
       "path": "03-сайт/сайт_текущий/faq/index.html",
       "before_sha256": "fd58e9de77286189730d69e12a960d89761021cf201e6eeac3ecd89c69198de2",
-      "after_sha256": "c14b25c44c7276b05a80374e2ed60aab86539ec51a6afdca778cac1d16003cd4",
+      "after_sha256": "b79a79cf292450ceb07c6009265ddb7b69d08ffbd49187bb98afd78f1f241190",
       "before_bytes": 14951,
-      "after_bytes": 30451,
+      "after_bytes": 31358,
       "status": "modified"
     },
     {
@@ -667,105 +667,105 @@
     {
       "path": "03-сайт/сайт_текущий/kak-otlichit-istochnik-zapakha/index.html",
       "before_sha256": "720af3ba349e333f0bd94eeb8cee8588c31f2969d16530708d8f1d3480b97804",
-      "after_sha256": "c663c5cba8a80c47038178faaa52711217905754a927529f60edcbcd1963a433",
+      "after_sha256": "8e943aace4456ebc1e44f17b287b35e23a0fa7196edd09c8cc0a3fed186550f9",
       "before_bytes": 15368,
-      "after_bytes": 28576,
+      "after_bytes": 34538,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kak-pogovorit-s-blizkim/index.html",
       "before_sha256": "d54ea9b3cad2fc3d35cf099ed4846320a77f46654ffa0d4dcd476b213fc56e72",
-      "after_sha256": "ae9dc95351074883c62c91fa9ac9819bdb8acbbfa86fdd1e92330f206e989339",
+      "after_sha256": "974d78a8ad6eb5b6ee2c9718684b6ceb4010440f897743e8a4d777a6edac3db3",
       "before_bytes": 11482,
-      "after_bytes": 26137,
+      "after_bytes": 27090,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kak-ubrat-zapah-iz-shkafa/index.html",
       "before_sha256": "5414d6287f6db8bf4f23d93968e6064b6e8c54dff61de02e29a06cd11f52cd61",
-      "after_sha256": "65add41cea835e7f25a6bb2de7af4bd7396efe89c0edef932633223b9af3ae0c",
+      "after_sha256": "834b6175805e2e5f825fe874366f9c5ee69d90cdab26f0c56b671b468869f7c4",
       "before_bytes": 15065,
-      "after_bytes": 26587,
+      "after_bytes": 31185,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kak-ubrat-zapah-s-divana/index.html",
       "before_sha256": "de078c97f16b726bab445e7fd203569650cf976360ba978c8fac3fd6c02bbc7e",
-      "after_sha256": "c7fbac59ba342927eaa37d62e3da58f97af8fd1aa5293e8d40b65e580835ea06",
+      "after_sha256": "720dcea841e4ba614b04054448c67a7f72a1c1fe07e1fd7ad752e955c672cbf9",
       "before_bytes": 15291,
-      "after_bytes": 27285,
+      "after_bytes": 31743,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kak-ubrat-zapah-s-matrasa/index.html",
       "before_sha256": "dbd6f015867c329583ff2b51f515574e9804862970622465a186fea4cf8e2220",
-      "after_sha256": "77be2462b79a19cc769588585328129328aa4ac147f6068847c12a3a4172eeef",
+      "after_sha256": "19614d46a55bc0c2a6098a9414e48dbfb597fb0364eac2ba54f38999a2d21424",
       "before_bytes": 17073,
-      "after_bytes": 27688,
+      "after_bytes": 32535,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kak-ubrat-zapah-v-sanuzle/index.html",
       "before_sha256": "01a682fa25d9470d4fdb38ae231695f065943b3785954effd8410054f17742b5",
-      "after_sha256": "bf9ec74019468d231b49c0deb75cb29dc0bb5c2f4b7ac191fead4555edac6b01",
+      "after_sha256": "4a6a086298c95e3d8d1f5c47a00da57c487ff20100be1e547d9a1388f5f3a49b",
       "before_bytes": 10751,
-      "after_bytes": 24661,
+      "after_bytes": 28782,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
       "before_sha256": "17be58038f80df598e4b005a630c82603f86ace3cacc8800a0fb6ec0e7d2f485",
-      "after_sha256": "29bd03002f57ab67f56c6e1eccfd1b16c841439d4488dbb56fc3270131753332",
+      "after_sha256": "4069ff4c862a473f1f3f46ed899b9a346c16e4087fdbebd613d2210b620bde17",
       "before_bytes": 14418,
-      "after_bytes": 26064,
+      "after_bytes": 29625,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/karta-kvartiry/index.html",
       "before_sha256": "b0c3cad735ab8335142c021faf1bba5a465478ce0d22e8cdb52aef86c108b978",
-      "after_sha256": "dc4147a04c198817402458cf356cebfaf13005306f2d755e7473f77a20944232",
+      "after_sha256": "2f082ba51610b025b0d8531290f3b44f5f886b9a61621041486ec6d36786e1d3",
       "before_bytes": 13080,
-      "after_bytes": 20201,
+      "after_bytes": 21175,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/karta-osetii/index.html",
       "before_sha256": "85de8c2304deb9692870fcbda44ded760bf0b1f2261f6f39c6e3eadcac54cb0f",
-      "after_sha256": "1030a28025c51fc45eddca32ac674946f1f255d0aaa35f373c7c04c0276a4e68",
+      "after_sha256": "e6d9efd087cb7383277e25b21f864cd3f34917f50a7d88c29b1a73aa1dc0ad46",
       "before_bytes": 13042,
-      "after_bytes": 16547,
+      "after_bytes": 17537,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kogda-k-vrachu/index.html",
       "before_sha256": "9957766748885abc557ea7516306818078e51a4b427fde83edf5f0a6e05eec69",
-      "after_sha256": "ce48d2e22dad589d3d3486436d6d7af3c0c9ea1cfd38caa1e25a60b65da59ae6",
+      "after_sha256": "a6bd8249f755bd3c1a761574177558b58d721d8391bba9c29dc5b4e5542db80b",
       "before_bytes": 10204,
-      "after_bytes": 24169,
+      "after_bytes": 25071,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/kviz/index.html",
       "before_sha256": "a6552157809c80a741aaea0163b66fa2438cf5090ef2a2b72cc5943c9ca7adc6",
-      "after_sha256": "9069688a91d9da286ff574c922ad42d6f1e4f6ea3eb2ca89218014076bc0f210",
+      "after_sha256": "770fb90912d74a3577cbf8c207790788834bf5ea82c8e7ae5d58ea42223b3dc9",
       "before_bytes": 11959,
-      "after_bytes": 32364,
+      "after_bytes": 33342,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/lekarstva-i-zapah/index.html",
       "before_sha256": "d6ea5241990687c4b3ef8c8ec20bda6f58303a9e71ed29148442aa114fd0b1b3",
-      "after_sha256": "4256a28826cf83b89b4056cc658479beb4cbc64391771fdee6f5118a788277cb",
+      "after_sha256": "428495d9edeb192060927956027457c0657776fcb298094b595679a4b6a9f9bd",
       "before_bytes": 10162,
-      "after_bytes": 24950,
+      "after_bytes": 25871,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/material-metod/index.html",
       "before_sha256": "bd9a7d15c0a4b40363db7451ebe9a762b40f6d3fb151dc9c10d45863b56df8ab",
-      "after_sha256": "17804d52ae2fa830743c253dc9d6a4a62bfce92f30133b3078d556aed4caf440",
+      "after_sha256": "687a973b21bc75dddbfff3e5dbd684b256d75f56dc3ed106668da2f3b68e4758",
       "before_bytes": 18088,
-      "after_bytes": 32658,
+      "after_bytes": 33662,
       "status": "modified"
     },
     {
@@ -779,33 +779,33 @@
     {
       "path": "03-сайт/сайт_текущий/o-proekte/index.html",
       "before_sha256": "cd97d3648bde36ca4899bdc3633a33dfe30ec6c4dfd738abc71e70f3d8619d82",
-      "after_sha256": "cb838e32afb8f7e4d14fb6e63f4d93dd8ff19430d9be19be89566eff80f8657b",
+      "after_sha256": "38536cf6d7e76796089c379a81d7fa009bba9e056eadc8a4c228ea3baf52bb4b",
       "before_bytes": 17940,
-      "after_bytes": 19929,
+      "after_bytes": 20826,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/ochistitel-vozduha/index.html",
       "before_sha256": "6f9116b394124cd79951a1f19468d8dfd320b660f3509f4891793c05b6aa6633",
-      "after_sha256": "70c8e52b3348054c6532701247c24d228f22476c26d664789597d08d56bc34c6",
+      "after_sha256": "98426b80c68102b9685846a1bf68d1d1ded1b08e98621952d26021e2a806221d",
       "before_bytes": 12036,
-      "after_bytes": 25487,
+      "after_bytes": 29204,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/odezhda-i-tekstil/index.html",
       "before_sha256": "1abceef1f6b669202fbdb3d6db7d83ce0932b88a383841518c3b0c9f2abeb256",
-      "after_sha256": "79c88ca6aa3a393dc130a96084f3926246b508080eda17d82bcbcc7a8221fa9d",
+      "after_sha256": "92c7c7126c468a3f8b604f3e73dacbe3e7e014fe28bddcbb135aed107ab665b2",
       "before_bytes": 10236,
-      "after_bytes": 25871,
+      "after_bytes": 30149,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/poroshok-dlya-tekstila/index.html",
       "before_sha256": "2bf37f5bac3f482a40fa5050b8a10cf7bd7f995a6f7918a9e073aa7f178fa8af",
-      "after_sha256": "e9b7ca08747578fbd8aaee381f7a976ea383efb64ed4f93b69b3f3493b9cc1a6",
+      "after_sha256": "9d6dcc2fea9ec7ee2b2e4b0e7a010dfc3cb81edab62759d9aed8f03deb47e06f",
       "before_bytes": 10829,
-      "after_bytes": 24713,
+      "after_bytes": 25681,
       "status": "modified"
     },
     {
@@ -835,9 +835,9 @@
     {
       "path": "03-сайт/сайт_текущий/sredstva-ot-zapaha/index.html",
       "before_sha256": "0a52f46d9670af50a60c23b9ca21713af667e70a23224a75b0cec9db81fdd784",
-      "after_sha256": "7a8c03a371de5008ff8a3ea9095c23d557ce1fd7f19a08231cf3760059c5c7e5",
+      "after_sha256": "1c31ad2870f5d5577c971500f4d6ef85ec1cc6709b02231155ff556525eb375f",
       "before_bytes": 15028,
-      "after_bytes": 24522,
+      "after_bytes": 25532,
       "status": "modified"
     },
     {
@@ -851,25 +851,25 @@
     {
       "path": "03-сайт/сайт_текущий/tonik-protirka/index.html",
       "before_sha256": "95e79392cf14f583ace31e5e6876655bfb7532b6c9a106c5dd83a26aadc71944",
-      "after_sha256": "8a26952f994ee3e98217580f83f5737858d07a022a5c23c624897fe58ca1e843",
+      "after_sha256": "517d1a47885406722e3ef37ce4929a7ab20414e06cc5bf6c91eb84274679af0c",
       "before_bytes": 10017,
-      "after_bytes": 23403,
+      "after_bytes": 24347,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/ubrat-zapah/index.html",
       "before_sha256": "bfe1abad8e8c5ff9245026f3d9aca09c6df96ea518d4b12ed221c5f9df1e5670",
-      "after_sha256": "9d726946f854936cdf50282e54537c7b01a86b97d9e9faf667de125b76a43650",
+      "after_sha256": "e68c6ce76d64c49945ef76e02f1f6d8044b682f8ee58c6cd92b323480e752d09",
       "before_bytes": 17409,
-      "after_bytes": 27621,
+      "after_bytes": 28562,
       "status": "modified"
     },
     {
       "path": "03-сайт/сайт_текущий/ventilyatsiya-i-vlazhnost/index.html",
       "before_sha256": "73ec0a538c769e5386211cd283550bc54a3f8600f389f39bc24c4a649f8f6317",
-      "after_sha256": "a39ac397b9ba3018d8014bfc5752804143415f706351d2e062ab2eeecda974a2",
+      "after_sha256": "e0acf1f1a43b71c0e1118c5fafa75627cf0974ee344d91c5c6439dfb2182e8f4",
       "before_bytes": 10830,
-      "after_bytes": 23565,
+      "after_bytes": 27269,
       "status": "modified"
     },
     {
@@ -883,9 +883,9 @@
     {
       "path": "03-сайт/сайт_текущий/zapah-v-kvartire/index.html",
       "before_sha256": "c9f133c0a68b9276ac40b43cb044a2c1c2e7217e09e60c923b5e2bcba0345313",
-      "after_sha256": "af051ead2ee81b7e691c89280c522c592932e7faa8fb7ea46b5be941d23e25b3",
+      "after_sha256": "4260da19cc7be4dd4b2d8430044b91be8e0d1cf23bfe81c6492d3a617bc9c5ad",
       "before_bytes": 17687,
-      "after_bytes": 26515,
+      "after_bytes": 27439,
       "status": "modified"
     },
     {
@@ -1163,9 +1163,9 @@
     {
       "path": "README.md",
       "before_sha256": "65119291b45c25a2b79b20e9d1c2e3a66e2491b907d2e16f3772ea845a712696",
-      "after_sha256": "a2894de4af95dfca8ae1cc94ec99057cd53345f9e71c20a7759342e2e23fa081",
+      "after_sha256": "bd56788ef4d8c37592893831853e73af292fe6a1493e3592c92d425e0bec644e",
       "before_bytes": 6997,
-      "after_bytes": 9375,
+      "after_bytes": 9443,
       "status": "modified"
     },
     {
@@ -1184,8 +1184,8 @@
     },
     {
       "path": "03-сайт/СВЕРКА_ПУБЛИКАЦИИ.json",
-      "sha256": "ef184664830313ddaf502ee1de73eed4436f9a4397e90b6c0bca45be2df9bea2",
-      "bytes": 52265
+      "sha256": "d3d628ba51fb050d2a96d1ccdae0ef7ad0dce996d83f5dc4aa46764a3a9deeea",
+      "bytes": 55161
     },
     {
       "path": "06_справочные/проверить_архив.py",
@@ -1228,5 +1228,43 @@
     "publication_snapshot": "03-сайт/СВЕРКА_ПУБЛИКАЦИИ.json",
     "functional_bugs_fixed": false
   },
-  "limitations": "Контрольные суммы описывают эту редакцию. Последующие согласованные изменения потребуют обновления манифеста. Это не испытание продукции и не утверждение об отсутствии ошибок на опубликованном сайте."
+  "limitations": "Контрольные суммы описывают эту редакцию. Последующие согласованные изменения потребуют обновления манифеста. Это не испытание продукции и не утверждение об отсутствии ошибок на опубликованном сайте.",
+  "sync_2026_09_21": {
+    "what": "Снимок сайта приведён к коммиту 79f98cdb3804ae2298efbf6f73ed05e6a57ff1c3 (разметка: цепочки, HowTo, QAPage)",
+    "files_updated": [
+      "01_НАЧНИ_ОТСЮДА/ИСТОРИЯ_РЕШЕНИЙ.md",
+      "02_документы_проекта/АУДИТ_САЙТА.md",
+      "02_документы_проекта/РЕЗЮМЕ_ПРОЕКТА.md",
+      "03-сайт/сайт_текущий/README.md",
+      "03-сайт/сайт_текущий/chto-takoe-2-nonenal/index.html",
+      "03-сайт/сайт_текущий/faq/index.html",
+      "03-сайт/сайт_текущий/kak-otlichit-istochnik-zapakha/index.html",
+      "03-сайт/сайт_текущий/kak-pogovorit-s-blizkim/index.html",
+      "03-сайт/сайт_текущий/kak-ubrat-zapah-iz-shkafa/index.html",
+      "03-сайт/сайт_текущий/kak-ubrat-zapah-s-divana/index.html",
+      "03-сайт/сайт_текущий/kak-ubrat-zapah-s-matrasa/index.html",
+      "03-сайт/сайт_текущий/kak-ubrat-zapah-v-sanuzle/index.html",
+      "03-сайт/сайт_текущий/kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
+      "03-сайт/сайт_текущий/karta-kvartiry/index.html",
+      "03-сайт/сайт_текущий/karta-osetii/index.html",
+      "03-сайт/сайт_текущий/kogda-k-vrachu/index.html",
+      "03-сайт/сайт_текущий/kviz/index.html",
+      "03-сайт/сайт_текущий/lekarstva-i-zapah/index.html",
+      "03-сайт/сайт_текущий/material-metod/index.html",
+      "03-сайт/сайт_текущий/o-proekte/index.html",
+      "03-сайт/сайт_текущий/ochistitel-vozduha/index.html",
+      "03-сайт/сайт_текущий/odezhda-i-tekstil/index.html",
+      "03-сайт/сайт_текущий/poroshok-dlya-tekstila/index.html",
+      "03-сайт/сайт_текущий/sredstva-ot-zapaha/index.html",
+      "03-сайт/сайт_текущий/tonik-protirka/index.html",
+      "03-сайт/сайт_текущий/ubrat-zapah/index.html",
+      "03-сайт/сайт_текущий/ventilyatsiya-i-vlazhnost/index.html",
+      "03-сайт/сайт_текущий/zapah-v-kvartire/index.html",
+      "README.md"
+    ],
+    "files_updated_count": 29,
+    "deleted": 0,
+    "added": 0,
+    "checked_by": "06_справочные/проверить_архив.py"
+  }
 }
