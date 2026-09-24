@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T15:03:28+00:00",
-  "archive_base_commit": "8f72ed8728c101db149b6b685c8135229f7f12ca",
+  "checked_at_utc": "2026-09-24T15:36:53+00:00",
+  "archive_base_commit": "c1c0f67253b1d503e9db606c893d66f6aaa1dc16",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "2a87bd766a3f74aabc56a986cb4e6748add669c4",
+  "source_commit": "042401b895a908b996c1d9d489bc7c13a3279d99",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -369,8 +369,8 @@
     },
     {
       "path": "kak-ubrat-zapah-v-sanuzle/index.html",
-      "bytes": 29405,
-      "sha256": "ff3ebbca6761c940935a96ada60d6ebb834b22323e303641de8232d56594ec44"
+      "bytes": 30699,
+      "sha256": "e152eac9f292c69f3928151bc7bf9a8b8f00f6ef2136068fcbfdb31293de16a7"
     },
     {
       "path": "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
@@ -1128,8 +1128,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-sanuzle/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-sanuzle/",
       "status": 200,
-      "bytes": 29405,
-      "sha256": "ff3ebbca6761c940935a96ada60d6ebb834b22323e303641de8232d56594ec44",
+      "bytes": 30699,
+      "sha256": "e152eac9f292c69f3928151bc7bf9a8b8f00f6ef2136068fcbfdb31293de16a7",
       "matches_source": true
     },
     {
@@ -1560,6 +1560,14 @@
       "chto-takoe-2-nonenal/index.html",
       "kogda-k-vrachu/index.html",
       "sredstva-ot-zapaha/index.html"
+    ]
+  },
+  "site_fix_2026_09_24_sanuzel": {
+    "what": "Аудит контента P1-Б.1: каустическая сода в сливах — сутки после кислоты, механика первой, химия по инструкции, СИЗ",
+    "commit": "042401b895a908b996c1d9d489bc7c13a3279d99",
+    "previous_source_commit": "2a87bd766a3f74aabc56a986cb4e6748add669c4",
+    "files": [
+      "kak-ubrat-zapah-v-sanuzle/index.html"
     ]
   }
 }
