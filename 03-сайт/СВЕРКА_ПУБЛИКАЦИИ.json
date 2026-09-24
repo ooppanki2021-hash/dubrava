@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T17:29:27+00:00",
-  "archive_base_commit": "fd80f8cd675c4b20a3ac4fa9ca114c7a1327bb7f",
+  "checked_at_utc": "2026-09-24T17:42:13+00:00",
+  "archive_base_commit": "3ace45b9a439ab171f833c545d33750aede988ed",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "ee812ed33c687070e7c3ff79353b0667fa0fbfc1",
+  "source_commit": "de8bd1cd2c7984ffdc8a2549e5603096f9c63fd5",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -354,8 +354,8 @@
     },
     {
       "path": "kak-ubrat-zapah-iz-shkafa/index.html",
-      "bytes": 31981,
-      "sha256": "f0640f656fc5f7994592cd4efb03db0875708944263437a41c70780205aadbf3"
+      "bytes": 32111,
+      "sha256": "6decf6925a93e1dc6afe1245beb48ef634134771a4f214733ddf3c08f836fd02"
     },
     {
       "path": "kak-ubrat-zapah-s-divana/index.html",
@@ -369,13 +369,13 @@
     },
     {
       "path": "kak-ubrat-zapah-v-sanuzle/index.html",
-      "bytes": 30699,
-      "sha256": "e152eac9f292c69f3928151bc7bf9a8b8f00f6ef2136068fcbfdb31293de16a7"
+      "bytes": 31729,
+      "sha256": "1e69a1b8760d91019d21997c0c2c545254a77bb90f9b3550517ba0a7436bd1d5"
     },
     {
       "path": "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
-      "bytes": 30621,
-      "sha256": "c02047e35a67f9759be8331afb36f56b2def1e0477130dcb17cf0b18381b28ff"
+      "bytes": 31413,
+      "sha256": "b7cee95af5daee9fb379d614fe1e9f823808ca63144479c94b23ec8bac71af0b"
     },
     {
       "path": "karta-kvartiry/index.html",
@@ -394,8 +394,8 @@
     },
     {
       "path": "kviz/index.html",
-      "bytes": 36341,
-      "sha256": "1a9618600e70d006aa8becc2c5d8bfe237c135f8ebc1610bb3cd0166851a5f87"
+      "bytes": 36448,
+      "sha256": "738dcc4978596d8c2075cdda1d19162a2379a765319891a8424a86f99af8cbf5"
     },
     {
       "path": "lekarstva-i-zapah/index.html",
@@ -404,8 +404,8 @@
     },
     {
       "path": "material-metod/index.html",
-      "bytes": 34354,
-      "sha256": "99579c487daa2397e48606276982bfd34361d8bdca61b14f117947e59a367a56"
+      "bytes": 34880,
+      "sha256": "458c8a90de87378ba71e8e7defaa7f26d0a7c64d6519c5de81a9d1729d1444bb"
     },
     {
       "path": "nabor/index.html",
@@ -424,13 +424,13 @@
     },
     {
       "path": "odezhda-i-tekstil/index.html",
-      "bytes": 31647,
-      "sha256": "ef0fddb93f8e019c46ade377848eb6776139f6236279a0e210ecf6a241680405"
+      "bytes": 31690,
+      "sha256": "856e860b3e756e611a261e616c4cea1eab406815be7ccf0af88c563ee11434ee"
     },
     {
       "path": "poroshok-dlya-tekstila/index.html",
-      "bytes": 26622,
-      "sha256": "c07fb04e913a0e00600fe40af3e1e45aac873e0130b76726832d39dcae4c92cf"
+      "bytes": 26663,
+      "sha256": "6a6658dd95d3873b3c0cae4f162c9913819e0df8e6e8d158ebfae6cb5380f6d4"
     },
     {
       "path": "robots.txt",
@@ -1101,8 +1101,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-iz-shkafa/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-iz-shkafa/",
       "status": 200,
-      "bytes": 31981,
-      "sha256": "f0640f656fc5f7994592cd4efb03db0875708944263437a41c70780205aadbf3",
+      "bytes": 32111,
+      "sha256": "6decf6925a93e1dc6afe1245beb48ef634134771a4f214733ddf3c08f836fd02",
       "matches_source": true
     },
     {
@@ -1128,8 +1128,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-sanuzle/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-sanuzle/",
       "status": 200,
-      "bytes": 30699,
-      "sha256": "e152eac9f292c69f3928151bc7bf9a8b8f00f6ef2136068fcbfdb31293de16a7",
+      "bytes": 31729,
+      "sha256": "1e69a1b8760d91019d21997c0c2c545254a77bb90f9b3550517ba0a7436bd1d5",
       "matches_source": true
     },
     {
@@ -1137,8 +1137,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-stiralnoj-mashine/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-stiralnoj-mashine/",
       "status": 200,
-      "bytes": 30621,
-      "sha256": "c02047e35a67f9759be8331afb36f56b2def1e0477130dcb17cf0b18381b28ff",
+      "bytes": 31413,
+      "sha256": "b7cee95af5daee9fb379d614fe1e9f823808ca63144479c94b23ec8bac71af0b",
       "matches_source": true
     },
     {
@@ -1173,8 +1173,8 @@
       "url": "https://zapahstarosti.ru/kviz/",
       "final_url": "https://zapahstarosti.ru/kviz/",
       "status": 200,
-      "bytes": 36341,
-      "sha256": "1a9618600e70d006aa8becc2c5d8bfe237c135f8ebc1610bb3cd0166851a5f87",
+      "bytes": 36448,
+      "sha256": "738dcc4978596d8c2075cdda1d19162a2379a765319891a8424a86f99af8cbf5",
       "matches_source": true
     },
     {
@@ -1191,8 +1191,8 @@
       "url": "https://zapahstarosti.ru/material-metod/",
       "final_url": "https://zapahstarosti.ru/material-metod/",
       "status": 200,
-      "bytes": 34354,
-      "sha256": "99579c487daa2397e48606276982bfd34361d8bdca61b14f117947e59a367a56",
+      "bytes": 34880,
+      "sha256": "458c8a90de87378ba71e8e7defaa7f26d0a7c64d6519c5de81a9d1729d1444bb",
       "matches_source": true
     },
     {
@@ -1227,8 +1227,8 @@
       "url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "final_url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "status": 200,
-      "bytes": 31647,
-      "sha256": "ef0fddb93f8e019c46ade377848eb6776139f6236279a0e210ecf6a241680405",
+      "bytes": 31690,
+      "sha256": "856e860b3e756e611a261e616c4cea1eab406815be7ccf0af88c563ee11434ee",
       "matches_source": true
     },
     {
@@ -1236,8 +1236,8 @@
       "url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "final_url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "status": 200,
-      "bytes": 26622,
-      "sha256": "c07fb04e913a0e00600fe40af3e1e45aac873e0130b76726832d39dcae4c92cf",
+      "bytes": 26663,
+      "sha256": "6a6658dd95d3873b3c0cae4f162c9913819e0df8e6e8d158ebfae6cb5380f6d4",
       "matches_source": true
     },
     {
@@ -1597,6 +1597,20 @@
     "files": [
       "kviz/index.html",
       "kak-ubrat-zapah-v-stiralnoj-mashine/index.html"
+    ]
+  },
+  "site_fix_2026_09_24_himiya": {
+    "what": "Аудит Б.2, Б.6, Б.7 + найденные места (швы, лоток, material-metod); перчатки, очки и маска во всех советах с содой, перкарбонатом и кислотой. Одобрено автором",
+    "commit": "de8bd1cd2c7984ffdc8a2549e5603096f9c63fd5",
+    "previous_source_commit": "ee812ed33c687070e7c3ff79353b0667fa0fbfc1",
+    "files": [
+      "kak-ubrat-zapah-v-sanuzle/index.html",
+      "kak-ubrat-zapah-iz-shkafa/index.html",
+      "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
+      "kviz/index.html",
+      "odezhda-i-tekstil/index.html",
+      "poroshok-dlya-tekstila/index.html",
+      "material-metod/index.html"
     ]
   }
 }
