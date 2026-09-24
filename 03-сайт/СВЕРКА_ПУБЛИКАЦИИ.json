@@ -1783,5 +1783,15 @@
       "sitemap.xml"
     ],
     "live_check": "24.09.2026: 2 из 2 совпадают по sha256"
+  },
+  "site_fix_2026_09_25_semantika_text_2nonenal": {
+    "what": "Семантика в тексте: /chto-takoe-2-nonenal/ (подзаголовок, 1-й абзац, 2 H2, 40+ по Haze, оговорка Gallagher 2008 и нонаналь, миф «гормон старости», анкор FAQ, исправлена фраза, дата). Одобрено автором",
+    "commit": "1ec6ee614f1db70d58a16f79829513ebc2eb3b68",
+    "previous_source_commit": "c59580e433dc210aaafadc3ca6687efc39b1da56",
+    "files": [
+      "chto-takoe-2-nonenal/index.html",
+      "sitemap.xml"
+    ],
+    "live_check": "25.09.2026: 2 из 2 совпадают по sha256"
   }
 }
