@@ -1793,5 +1793,14 @@
       "sitemap.xml"
     ],
     "live_check": "25.09.2026: 2 из 2 совпадают по sha256"
+  },
+  "site_fix_2026_09_25_2nonenal_dub": {
+    "what": "2-ноненаль: убрана фраза «дуб не клинически подтверждён»; «с хурмой, корой дуба…» → «с танинами». Решение автора",
+    "commit": "eed8bb7374ec2af277555a29b156f85920969738",
+    "previous_source_commit": "1ec6ee614f1db70d58a16f79829513ebc2eb3b68",
+    "files": [
+      "chto-takoe-2-nonenal/index.html"
+    ],
+    "live_check": "25.09.2026: совпадает по sha256"
   }
 }
