@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T15:36:53+00:00",
-  "archive_base_commit": "c1c0f67253b1d503e9db606c893d66f6aaa1dc16",
+  "checked_at_utc": "2026-09-24T16:54:36+00:00",
+  "archive_base_commit": "974167d69e17d9fed7363fe19ef795011df41f66",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "042401b895a908b996c1d9d489bc7c13a3279d99",
+  "source_commit": "e9d8d47cce4eebd03fd390a29897f1ddb86d8bcc",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -394,8 +394,8 @@
     },
     {
       "path": "kviz/index.html",
-      "bytes": 33571,
-      "sha256": "6a4947686aaada14e1f670ebea3593828b7932cb6cc5d8b717a9224ba9a165a5"
+      "bytes": 36165,
+      "sha256": "2dbb5b596e66177ecceb0237f7db1c690195949f74ed1ccd7f548dadc97142af"
     },
     {
       "path": "lekarstva-i-zapah/index.html",
@@ -1173,8 +1173,8 @@
       "url": "https://zapahstarosti.ru/kviz/",
       "final_url": "https://zapahstarosti.ru/kviz/",
       "status": 200,
-      "bytes": 33571,
-      "sha256": "6a4947686aaada14e1f670ebea3593828b7932cb6cc5d8b717a9224ba9a165a5",
+      "bytes": 36165,
+      "sha256": "2dbb5b596e66177ecceb0237f7db1c690195949f74ed1ccd7f548dadc97142af",
       "matches_source": true
     },
     {
@@ -1569,5 +1569,15 @@
     "files": [
       "kak-ubrat-zapah-v-sanuzle/index.html"
     ]
+  },
+  "site_fix_2026_09_24_kviz": {
+    "what": "Аудит контента P0 (квиз): 8 правок, одобрены автором",
+    "commit": "e9d8d47cce4eebd03fd390a29897f1ddb86d8bcc",
+    "previous_source_commit": "042401b895a908b996c1d9d489bc7c13a3279d99",
+    "files": [
+      "kviz/index.html"
+    ],
+    "edited_via": "HTML напрямую, не конструктор",
+    "quiz_script_checked": true
   }
 }
