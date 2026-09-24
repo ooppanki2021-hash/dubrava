@@ -1752,5 +1752,26 @@
     "files": [
       "index.html"
     ]
+  },
+  "site_fix_2026_09_24_semantika_A": {
+    "what": "Семантика, вариант А: title/H1/description/og на 13 страницах. Одобрено автором",
+    "commit": "9f97dc3293bf693a8af88a74c52cfaa8692e70f9",
+    "previous_source_commit": "4cffa32a18693b0a85f3b045b28adc05e8413fc7",
+    "files": [
+      "chto-takoe-2-nonenal/index.html",
+      "faq/index.html",
+      "index.html",
+      "kak-pogovorit-s-blizkim/index.html",
+      "kak-ubrat-zapah-iz-shkafa/index.html",
+      "kak-ubrat-zapah-s-divana/index.html",
+      "kak-ubrat-zapah-s-matrasa/index.html",
+      "kogda-k-vrachu/index.html",
+      "odezhda-i-tekstil/index.html",
+      "poroshok-dlya-tekstila/index.html",
+      "sredstva-ot-zapaha/index.html",
+      "ubrat-zapah/index.html",
+      "zapah-v-kvartire/index.html"
+    ],
+    "live_check": "24.09.2026: 13 из 13 совпадают по sha256"
   }
 }
