@@ -1657,5 +1657,38 @@
       "faq/index.html",
       "ventilyatsiya-i-vlazhnost/index.html"
     ]
+  },
+  "site_fix_2026_09_24_p2_final": {
+    "what": "Аудит P2 2.5 (проценты 95/90 %) и 2.11 (единая подпись, dateModified/lastmod 24.09) + хвосты: фотокатализ, схема зон, карта Осетии, заголовки /kogda-k-vrachu/, итог и таблица /sredstva-ot-zapaha/. Одобрено автором",
+    "commit": "67569f73be4d5a2fdb5341fce8700b7f43b00316",
+    "previous_source_commit": "f56708bbf4cff482ea340c4931ffe497a8195a5c",
+    "files": [
+      "chto-takoe-2-nonenal/index.html",
+      "faq/index.html",
+      "kak-otlichit-istochnik-zapakha/index.html",
+      "kak-pogovorit-s-blizkim/index.html",
+      "kak-ubrat-zapah-iz-shkafa/index.html",
+      "kak-ubrat-zapah-s-divana/index.html",
+      "kak-ubrat-zapah-s-matrasa/index.html",
+      "kak-ubrat-zapah-v-sanuzle/index.html",
+      "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
+      "karta-kvartiry/index.html",
+      "karta-osetii/index.html",
+      "kogda-k-vrachu/index.html",
+      "kviz/index.html",
+      "lekarstva-i-zapah/index.html",
+      "material-metod/index.html",
+      "o-proekte/index.html",
+      "ochistitel-vozduha/index.html",
+      "odezhda-i-tekstil/index.html",
+      "poroshok-dlya-tekstila/index.html",
+      "sitemap.xml",
+      "sredstva-ot-zapaha/index.html",
+      "tonik-protirka/index.html",
+      "ubrat-zapah/index.html",
+      "ventilyatsiya-i-vlazhnost/index.html",
+      "zapah-v-kvartire/index.html"
+    ],
+    "live_check": "24.09.2026: 25 из 25 файлов совпадают с live по sha256"
   }
 }
