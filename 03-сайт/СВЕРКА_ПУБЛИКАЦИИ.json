@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T14:35:21+00:00",
-  "archive_base_commit": "d32ba88826fe747a26787f40752e66af66b87bb2",
+  "checked_at_utc": "2026-09-24T14:45:12+00:00",
+  "archive_base_commit": "7c2543da262606d0ccad807d2714259e22b4c45f",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "f148f53893cb57e902d90f2ce0780abfe42112af",
+  "source_commit": "832c803d9207333e6044e52e55c6b180f420a25d",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -339,8 +339,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 19771,
-      "sha256": "6b38d4c2d037f3fdc6c0a48ccb9d957f6b813905fdcd64d460412440d33839e0"
+      "bytes": 19769,
+      "sha256": "4f64a81901a401d94e82cbc628950a03e1e0eaecabe27a3312aba1c390061e76"
     },
     {
       "path": "kak-otlichit-istochnik-zapakha/index.html",
@@ -1074,8 +1074,8 @@
       "url": "https://zapahstarosti.ru/",
       "final_url": "https://zapahstarosti.ru/",
       "status": 200,
-      "bytes": 19771,
-      "sha256": "6b38d4c2d037f3fdc6c0a48ccb9d957f6b813905fdcd64d460412440d33839e0",
+      "bytes": 19769,
+      "sha256": "4f64a81901a401d94e82cbc628950a03e1e0eaecabe27a3312aba1c390061e76",
       "matches_source": true
     },
     {
@@ -1543,5 +1543,13 @@
     "files_deleted": [],
     "force_push": false,
     "recrawl": "не запрашивался по решению автора"
+  },
+  "site_fix_2026_09_24_home_link": {
+    "what": "Главная: анкор «карта квартиры» переведён с /zapah-v-kvartire/ на /karta-kvartiry/",
+    "commit": "832c803d9207333e6044e52e55c6b180f420a25d",
+    "previous_source_commit": "f148f53893cb57e902d90f2ce0780abfe42112af",
+    "files": [
+      "index.html"
+    ]
   }
 }
