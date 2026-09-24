@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T17:42:13+00:00",
-  "archive_base_commit": "3ace45b9a439ab171f833c545d33750aede988ed",
+  "checked_at_utc": "2026-09-24T17:51:15+00:00",
+  "archive_base_commit": "f1bef1b7ea4fda433ce7db90b5f92c9e0594b6f1",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "de8bd1cd2c7984ffdc8a2549e5603096f9c63fd5",
+  "source_commit": "97c727626607c9d30e60044780c93a73f5832c9f",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "faq/index.html",
-      "bytes": 32132,
-      "sha256": "3de89938727fbf097df1cf2851ee90f54049d87be38dcf49fb04146a17a47148"
+      "bytes": 32355,
+      "sha256": "f5fb7c1a313f43039ef3bf8f4ede9deec8cee659190e1fc1d445ffcb2b439772"
     },
     {
       "path": "favicon.ico",
@@ -344,8 +344,8 @@
     },
     {
       "path": "kak-otlichit-istochnik-zapakha/index.html",
-      "bytes": 35472,
-      "sha256": "f0501b5ea0b816352b729dd9124ed2596a69882894181f8f52d0b6c6d22e8bef"
+      "bytes": 35480,
+      "sha256": "4b641d6a106d83e532becde3a9e6cc725fddce3b1243492c3d9c837dee0bc82a"
     },
     {
       "path": "kak-pogovorit-s-blizkim/index.html",
@@ -389,8 +389,8 @@
     },
     {
       "path": "kogda-k-vrachu/index.html",
-      "bytes": 25631,
-      "sha256": "580380259414a5f9126c10fb4d1257860372ad2c7a6e30e3999ed1482dc7f3a5"
+      "bytes": 24931,
+      "sha256": "fc442c0b54e28c3b63ff44906d59f19c7aadef312ed9d70b5bfdc9fe056d0213"
     },
     {
       "path": "kviz/index.html",
@@ -399,8 +399,8 @@
     },
     {
       "path": "lekarstva-i-zapah/index.html",
-      "bytes": 26424,
-      "sha256": "f12d051b47002d82814b02adcdeda5885802f3d3d3c50848e99df9b65f838d34"
+      "bytes": 26506,
+      "sha256": "e5f5b6167f485ac6db5d472151ff33cdbd2d6b008feec28aa762a66c557f8863"
     },
     {
       "path": "material-metod/index.html",
@@ -561,8 +561,8 @@
       "url": "https://zapahstarosti.ru/faq/",
       "final_url": "https://zapahstarosti.ru/faq/",
       "status": 200,
-      "bytes": 32132,
-      "sha256": "3de89938727fbf097df1cf2851ee90f54049d87be38dcf49fb04146a17a47148",
+      "bytes": 32355,
+      "sha256": "f5fb7c1a313f43039ef3bf8f4ede9deec8cee659190e1fc1d445ffcb2b439772",
       "matches_source": true
     },
     {
@@ -1083,8 +1083,8 @@
       "url": "https://zapahstarosti.ru/kak-otlichit-istochnik-zapakha/",
       "final_url": "https://zapahstarosti.ru/kak-otlichit-istochnik-zapakha/",
       "status": 200,
-      "bytes": 35472,
-      "sha256": "f0501b5ea0b816352b729dd9124ed2596a69882894181f8f52d0b6c6d22e8bef",
+      "bytes": 35480,
+      "sha256": "4b641d6a106d83e532becde3a9e6cc725fddce3b1243492c3d9c837dee0bc82a",
       "matches_source": true
     },
     {
@@ -1164,8 +1164,8 @@
       "url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "final_url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "status": 200,
-      "bytes": 25631,
-      "sha256": "580380259414a5f9126c10fb4d1257860372ad2c7a6e30e3999ed1482dc7f3a5",
+      "bytes": 24931,
+      "sha256": "fc442c0b54e28c3b63ff44906d59f19c7aadef312ed9d70b5bfdc9fe056d0213",
       "matches_source": true
     },
     {
@@ -1182,8 +1182,8 @@
       "url": "https://zapahstarosti.ru/lekarstva-i-zapah/",
       "final_url": "https://zapahstarosti.ru/lekarstva-i-zapah/",
       "status": 200,
-      "bytes": 26424,
-      "sha256": "f12d051b47002d82814b02adcdeda5885802f3d3d3c50848e99df9b65f838d34",
+      "bytes": 26506,
+      "sha256": "e5f5b6167f485ac6db5d472151ff33cdbd2d6b008feec28aa762a66c557f8863",
       "matches_source": true
     },
     {
@@ -1611,6 +1611,17 @@
       "odezhda-i-tekstil/index.html",
       "poroshok-dlya-tekstila/index.html",
       "material-metod/index.html"
+    ]
+  },
+  "site_fix_2026_09_24_medicina": {
+    "what": "Аудит P1-А (А.1–А.8): без связки «запах = диагноз» и назначения анализов; красные флаги и 103 сохранены; питьё — по рекомендации врача. Одобрено автором",
+    "commit": "97c727626607c9d30e60044780c93a73f5832c9f",
+    "previous_source_commit": "de8bd1cd2c7984ffdc8a2549e5603096f9c63fd5",
+    "files": [
+      "kogda-k-vrachu/index.html",
+      "faq/index.html",
+      "kak-otlichit-istochnik-zapakha/index.html",
+      "lekarstva-i-zapah/index.html"
     ]
   }
 }
