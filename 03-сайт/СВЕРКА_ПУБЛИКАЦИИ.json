@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T17:51:15+00:00",
-  "archive_base_commit": "f1bef1b7ea4fda433ce7db90b5f92c9e0594b6f1",
+  "checked_at_utc": "2026-09-24T18:09:10+00:00",
+  "archive_base_commit": "564d5b60b4f5e5b604082eba729801f4e35db897",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "97c727626607c9d30e60044780c93a73f5832c9f",
+  "source_commit": "66655afeec09da58885efad9d35c3526b986f72b",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -54,8 +54,8 @@
     },
     {
       "path": "faq/index.html",
-      "bytes": 32355,
-      "sha256": "f5fb7c1a313f43039ef3bf8f4ede9deec8cee659190e1fc1d445ffcb2b439772"
+      "bytes": 32337,
+      "sha256": "0bbfeff730bf9880a90fef8323d8e6bc1a9a69d08717a058e08cd020ae9a9296"
     },
     {
       "path": "favicon.ico",
@@ -384,13 +384,13 @@
     },
     {
       "path": "karta-osetii/index.html",
-      "bytes": 18660,
-      "sha256": "c87af8840f22c15b0d2a83e8e848de2a94dae2428a0a43e6ad0728a26f9e57d8"
+      "bytes": 18323,
+      "sha256": "d7a7058b6996e11b7b7bcfffc65b893e330f2e305a35b2d1d311f41ed66ecb88"
     },
     {
       "path": "kogda-k-vrachu/index.html",
-      "bytes": 24931,
-      "sha256": "fc442c0b54e28c3b63ff44906d59f19c7aadef312ed9d70b5bfdc9fe056d0213"
+      "bytes": 24808,
+      "sha256": "91cd9ad3efe9adb2e68e35faa35f9990bf504bcfce7dcf1eb275bbec658b1cde"
     },
     {
       "path": "kviz/index.html",
@@ -404,8 +404,8 @@
     },
     {
       "path": "material-metod/index.html",
-      "bytes": 34880,
-      "sha256": "458c8a90de87378ba71e8e7defaa7f26d0a7c64d6519c5de81a9d1729d1444bb"
+      "bytes": 34723,
+      "sha256": "5ff62b42de2617d39c22f9b9dcb2ae4f59379d8ab53d9ca8d470a3a08a9c94d0"
     },
     {
       "path": "nabor/index.html",
@@ -414,8 +414,8 @@
     },
     {
       "path": "o-proekte/index.html",
-      "bytes": 21692,
-      "sha256": "dbecd2803cfb04873d267b40477835c5084eb32c5e8cdbcb1dad4c2b23a4f463"
+      "bytes": 21711,
+      "sha256": "e23065c8cb702045f356f87ef34c5cd2b2bad24e9df461782029ad256a98cf72"
     },
     {
       "path": "ochistitel-vozduha/index.html",
@@ -449,8 +449,8 @@
     },
     {
       "path": "sredstva-ot-zapaha/index.html",
-      "bytes": 26413,
-      "sha256": "c538253183b5407544d8b3921a005ebd381e6e1c51a2e92414cb1ddf0f7c2cf3"
+      "bytes": 26191,
+      "sha256": "26830b5554f1562c16bb4dfab5d4fd9ddb1770f2e32424894b4e87391e7f6290"
     },
     {
       "path": "style.css",
@@ -459,13 +459,13 @@
     },
     {
       "path": "tonik-protirka/index.html",
-      "bytes": 24879,
-      "sha256": "959e44f548a33923def94a7b780942cfe8ea7f9f65c5748b4974e8b5529a806a"
+      "bytes": 24950,
+      "sha256": "9127c74c0c6c8b3f6b160e55d2ddb25169935b6eca3c1a4caebed5b0a6c04071"
     },
     {
       "path": "ubrat-zapah/index.html",
-      "bytes": 29438,
-      "sha256": "7d7943c75a8ba573813c3c260bdd8b694e9cd7e1acceb639ffe096d36851969e"
+      "bytes": 29362,
+      "sha256": "a823e984e84cdde64404c632dd5c775838a56377cc2a1f9194fbd5c060b0a080"
     },
     {
       "path": "ventilyatsiya-i-vlazhnost/index.html",
@@ -561,8 +561,8 @@
       "url": "https://zapahstarosti.ru/faq/",
       "final_url": "https://zapahstarosti.ru/faq/",
       "status": 200,
-      "bytes": 32355,
-      "sha256": "f5fb7c1a313f43039ef3bf8f4ede9deec8cee659190e1fc1d445ffcb2b439772",
+      "bytes": 32337,
+      "sha256": "0bbfeff730bf9880a90fef8323d8e6bc1a9a69d08717a058e08cd020ae9a9296",
       "matches_source": true
     },
     {
@@ -1155,8 +1155,8 @@
       "url": "https://zapahstarosti.ru/karta-osetii/",
       "final_url": "https://zapahstarosti.ru/karta-osetii/",
       "status": 200,
-      "bytes": 18660,
-      "sha256": "c87af8840f22c15b0d2a83e8e848de2a94dae2428a0a43e6ad0728a26f9e57d8",
+      "bytes": 18323,
+      "sha256": "d7a7058b6996e11b7b7bcfffc65b893e330f2e305a35b2d1d311f41ed66ecb88",
       "matches_source": true
     },
     {
@@ -1164,8 +1164,8 @@
       "url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "final_url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "status": 200,
-      "bytes": 24931,
-      "sha256": "fc442c0b54e28c3b63ff44906d59f19c7aadef312ed9d70b5bfdc9fe056d0213",
+      "bytes": 24808,
+      "sha256": "91cd9ad3efe9adb2e68e35faa35f9990bf504bcfce7dcf1eb275bbec658b1cde",
       "matches_source": true
     },
     {
@@ -1191,8 +1191,8 @@
       "url": "https://zapahstarosti.ru/material-metod/",
       "final_url": "https://zapahstarosti.ru/material-metod/",
       "status": 200,
-      "bytes": 34880,
-      "sha256": "458c8a90de87378ba71e8e7defaa7f26d0a7c64d6519c5de81a9d1729d1444bb",
+      "bytes": 34723,
+      "sha256": "5ff62b42de2617d39c22f9b9dcb2ae4f59379d8ab53d9ca8d470a3a08a9c94d0",
       "matches_source": true
     },
     {
@@ -1209,8 +1209,8 @@
       "url": "https://zapahstarosti.ru/o-proekte/",
       "final_url": "https://zapahstarosti.ru/o-proekte/",
       "status": 200,
-      "bytes": 21692,
-      "sha256": "dbecd2803cfb04873d267b40477835c5084eb32c5e8cdbcb1dad4c2b23a4f463",
+      "bytes": 21711,
+      "sha256": "e23065c8cb702045f356f87ef34c5cd2b2bad24e9df461782029ad256a98cf72",
       "matches_source": true
     },
     {
@@ -1272,8 +1272,8 @@
       "url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "final_url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "status": 200,
-      "bytes": 26413,
-      "sha256": "c538253183b5407544d8b3921a005ebd381e6e1c51a2e92414cb1ddf0f7c2cf3",
+      "bytes": 26191,
+      "sha256": "26830b5554f1562c16bb4dfab5d4fd9ddb1770f2e32424894b4e87391e7f6290",
       "matches_source": true
     },
     {
@@ -1290,8 +1290,8 @@
       "url": "https://zapahstarosti.ru/tonik-protirka/",
       "final_url": "https://zapahstarosti.ru/tonik-protirka/",
       "status": 200,
-      "bytes": 24879,
-      "sha256": "959e44f548a33923def94a7b780942cfe8ea7f9f65c5748b4974e8b5529a806a",
+      "bytes": 24950,
+      "sha256": "9127c74c0c6c8b3f6b160e55d2ddb25169935b6eca3c1a4caebed5b0a6c04071",
       "matches_source": true
     },
     {
@@ -1299,8 +1299,8 @@
       "url": "https://zapahstarosti.ru/ubrat-zapah/",
       "final_url": "https://zapahstarosti.ru/ubrat-zapah/",
       "status": 200,
-      "bytes": 29438,
-      "sha256": "7d7943c75a8ba573813c3c260bdd8b694e9cd7e1acceb639ffe096d36851969e",
+      "bytes": 29362,
+      "sha256": "a823e984e84cdde64404c632dd5c775838a56377cc2a1f9194fbd5c060b0a080",
       "matches_source": true
     },
     {
@@ -1622,6 +1622,21 @@
       "faq/index.html",
       "kak-otlichit-istochnik-zapakha/index.html",
       "lekarstva-i-zapah/index.html"
+    ]
+  },
+  "site_fix_2026_09_24_produkt": {
+    "what": "Аудит P1-В (В.1–В.8) + хвост P1-А (энцефалопатия). Одобрено автором",
+    "commit": "66655afeec09da58885efad9d35c3526b986f72b",
+    "previous_source_commit": "97c727626607c9d30e60044780c93a73f5832c9f",
+    "files": [
+      "kogda-k-vrachu/index.html",
+      "sredstva-ot-zapaha/index.html",
+      "tonik-protirka/index.html",
+      "faq/index.html",
+      "ubrat-zapah/index.html",
+      "material-metod/index.html",
+      "o-proekte/index.html",
+      "karta-osetii/index.html"
     ]
   }
 }
