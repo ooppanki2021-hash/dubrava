@@ -1735,5 +1735,14 @@
       "zapah-v-kvartire/index.html"
     ],
     "live_check": "24.09.2026: 28 из 28 совпадают по sha256"
+  },
+  "site_fix_2026_09_24_constructor": {
+    "what": "Конструктор v8: Метрика по согласию, окно согласия и подвал с политикой/владельцем в новых и пересохранённых страницах",
+    "commit": "ba5ec9d40a06a713e37243536310f625d1af804b",
+    "previous_source_commit": "cd3c0d63e3a4048c308bed2064a06e8e45d4d6a4",
+    "files": [
+      "constructor-v5.html"
+    ],
+    "live_check": "24.09.2026: совпадает по sha256"
   }
 }
