@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T16:54:36+00:00",
-  "archive_base_commit": "974167d69e17d9fed7363fe19ef795011df41f66",
+  "checked_at_utc": "2026-09-24T17:19:36+00:00",
+  "archive_base_commit": "51b22dd1a537238077fa5eaa6494e7518a8a021b",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "e9d8d47cce4eebd03fd390a29897f1ddb86d8bcc",
+  "source_commit": "0c4c9e5266aeb7de10ec1f729f08e88bb2c7ced7",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -394,8 +394,8 @@
     },
     {
       "path": "kviz/index.html",
-      "bytes": 36165,
-      "sha256": "2dbb5b596e66177ecceb0237f7db1c690195949f74ed1ccd7f548dadc97142af"
+      "bytes": 36260,
+      "sha256": "cbd95dcfa2f3e4faa04ef6715492cfe5e256576d08a6708d5a951d0ab1ef0519"
     },
     {
       "path": "lekarstva-i-zapah/index.html",
@@ -424,13 +424,13 @@
     },
     {
       "path": "odezhda-i-tekstil/index.html",
-      "bytes": 30696,
-      "sha256": "8b892d018f1bdd1116f12f819a78f0d679f9784665a5c76e6a41901decaf2258"
+      "bytes": 31647,
+      "sha256": "ef0fddb93f8e019c46ade377848eb6776139f6236279a0e210ecf6a241680405"
     },
     {
       "path": "poroshok-dlya-tekstila/index.html",
-      "bytes": 26245,
-      "sha256": "474536b91cb502f09d43ef2251309040c0549b6f9954a4fd59c72d80ea03af81"
+      "bytes": 26622,
+      "sha256": "c07fb04e913a0e00600fe40af3e1e45aac873e0130b76726832d39dcae4c92cf"
     },
     {
       "path": "robots.txt",
@@ -1173,8 +1173,8 @@
       "url": "https://zapahstarosti.ru/kviz/",
       "final_url": "https://zapahstarosti.ru/kviz/",
       "status": 200,
-      "bytes": 36165,
-      "sha256": "2dbb5b596e66177ecceb0237f7db1c690195949f74ed1ccd7f548dadc97142af",
+      "bytes": 36260,
+      "sha256": "cbd95dcfa2f3e4faa04ef6715492cfe5e256576d08a6708d5a951d0ab1ef0519",
       "matches_source": true
     },
     {
@@ -1227,8 +1227,8 @@
       "url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "final_url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "status": 200,
-      "bytes": 30696,
-      "sha256": "8b892d018f1bdd1116f12f819a78f0d679f9784665a5c76e6a41901decaf2258",
+      "bytes": 31647,
+      "sha256": "ef0fddb93f8e019c46ade377848eb6776139f6236279a0e210ecf6a241680405",
       "matches_source": true
     },
     {
@@ -1236,8 +1236,8 @@
       "url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "final_url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "status": 200,
-      "bytes": 26245,
-      "sha256": "474536b91cb502f09d43ef2251309040c0549b6f9954a4fd59c72d80ea03af81",
+      "bytes": 26622,
+      "sha256": "c07fb04e913a0e00600fe40af3e1e45aac873e0130b76726832d39dcae4c92cf",
       "matches_source": true
     },
     {
@@ -1579,5 +1579,15 @@
     ],
     "edited_via": "HTML напрямую, не конструктор",
     "quiz_script_checked": true
+  },
+  "site_fix_2026_09_24_soda": {
+    "what": "Аудит Б.3 и Б.5: сода в стирке заменена на специальное средство на основе кальцинированной соды для автоматических машин, по инструкции, в перчатках; только для вещей 60 °C+; список запрещённых тканей. Одобрено автором",
+    "commit": "0c4c9e5266aeb7de10ec1f729f08e88bb2c7ced7",
+    "previous_source_commit": "e9d8d47cce4eebd03fd390a29897f1ddb86d8bcc",
+    "files": [
+      "kviz/index.html",
+      "odezhda-i-tekstil/index.html",
+      "poroshok-dlya-tekstila/index.html"
+    ]
   }
 }
