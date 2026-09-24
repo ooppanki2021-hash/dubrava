@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T14:16:22+00:00",
-  "archive_base_commit": "d6fa6e85de690498c7b8505de6c4c310336c2a0d",
+  "checked_at_utc": "2026-09-24T14:35:21+00:00",
+  "archive_base_commit": "d32ba88826fe747a26787f40752e66af66b87bb2",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "9ea986c7cd7349e5ea8bedd3fc3cf0db2448800f",
+  "source_commit": "f148f53893cb57e902d90f2ce0780abfe42112af",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -44,8 +44,8 @@
     },
     {
       "path": "chto-takoe-2-nonenal/index.html",
-      "bytes": 39513,
-      "sha256": "01ae890df38ff6527fe94097a3fb2420bf0169ac60f0c5a4ac4fa5b49275efb7"
+      "bytes": 39373,
+      "sha256": "69fc9ed6f663f2be42dac0f5c6aa13b5d14ee2d4b7dc31499e8076b31f3e7ada"
     },
     {
       "path": "constructor-v5.html",
@@ -54,8 +54,8 @@
     },
     {
       "path": "faq/index.html",
-      "bytes": 32221,
-      "sha256": "631b20e12e442a8e1c6ecb50e9846cfba78c8bb124f390c1a5e0501281c197d3"
+      "bytes": 32132,
+      "sha256": "3de89938727fbf097df1cf2851ee90f54049d87be38dcf49fb04146a17a47148"
     },
     {
       "path": "favicon.ico",
@@ -339,73 +339,73 @@
     },
     {
       "path": "index.html",
-      "bytes": 19992,
-      "sha256": "e2a93e803f4e63569c411c33f27949b5630b8a17fdc4e6f0ad5afb6e4dc928f5"
+      "bytes": 19771,
+      "sha256": "6b38d4c2d037f3fdc6c0a48ccb9d957f6b813905fdcd64d460412440d33839e0"
     },
     {
       "path": "kak-otlichit-istochnik-zapakha/index.html",
-      "bytes": 35537,
-      "sha256": "aba7b1da764f92da443311a09bbdd0f791d084e9c74ff39d9e0ab5af92493d33"
+      "bytes": 35472,
+      "sha256": "f0501b5ea0b816352b729dd9124ed2596a69882894181f8f52d0b6c6d22e8bef"
     },
     {
       "path": "kak-pogovorit-s-blizkim/index.html",
-      "bytes": 27906,
-      "sha256": "390c25858b293eb2d8fd9281364bc8248bd9df70451eea68b8410755f475304e"
+      "bytes": 27799,
+      "sha256": "5d066e96c0b25947bdc81422f519cece3a996011afb77da8f7a1c9aed1dc8754"
     },
     {
       "path": "kak-ubrat-zapah-iz-shkafa/index.html",
-      "bytes": 32139,
-      "sha256": "eb11e2bf3d9dede83532140d3d37213dc578f2af0e0ab7b0f98873505e0b510e"
+      "bytes": 31981,
+      "sha256": "f0640f656fc5f7994592cd4efb03db0875708944263437a41c70780205aadbf3"
     },
     {
       "path": "kak-ubrat-zapah-s-divana/index.html",
-      "bytes": 32818,
-      "sha256": "2d3661ae8a9581f444222983389375b52b6979b5577c11f49bc9619abf837905"
+      "bytes": 32634,
+      "sha256": "c43e8a73bac3891cac745417a95e88e3c0f736bed3d90be9027fa2f4af584716"
     },
     {
       "path": "kak-ubrat-zapah-s-matrasa/index.html",
-      "bytes": 33655,
-      "sha256": "29dbb82423524946742a61e2b1c0f44a048d3f4661ca1006b6cee94b175e2b02"
+      "bytes": 33407,
+      "sha256": "f9933f94e0173409bedfd44f73be4346e8929ad6e74a9f072e90bb684e67b4c3"
     },
     {
       "path": "kak-ubrat-zapah-v-sanuzle/index.html",
-      "bytes": 29815,
-      "sha256": "893a2c26f72480f01582d5bb2b7f0a7eaccbd679450e2cbfeff17bd0423d1002"
+      "bytes": 29405,
+      "sha256": "ff3ebbca6761c940935a96ada60d6ebb834b22323e303641de8232d56594ec44"
     },
     {
       "path": "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
-      "bytes": 30598,
-      "sha256": "5ec79814d6db384b396c9d29966734459feea0976f9ef850282acbfc83887c3c"
+      "bytes": 30239,
+      "sha256": "2ca95f98fe035b54ff8803db9e629152db211a7c071f4a9cff0991c7d4b765f1"
     },
     {
       "path": "karta-kvartiry/index.html",
-      "bytes": 22250,
-      "sha256": "254fbf67aa8f4d33d25ff5fb109f2bce6f45161a2f76e3746a47599f44425f99"
+      "bytes": 21914,
+      "sha256": "5ee6c4464b94bd42a141a924ef46f574c54dd93dbe225e43d08fe6862e0f38fd"
     },
     {
       "path": "karta-osetii/index.html",
-      "bytes": 19043,
-      "sha256": "4dc761e7d3d9223b27070f3c0e382cb92a404f66e625d5c9b5a1396a806aa3a8"
+      "bytes": 18660,
+      "sha256": "c87af8840f22c15b0d2a83e8e848de2a94dae2428a0a43e6ad0728a26f9e57d8"
     },
     {
       "path": "kogda-k-vrachu/index.html",
-      "bytes": 25859,
-      "sha256": "bbe427513ab85f032f009882b3f059d0c93c36bd3a954ae48236896c79724f6a"
+      "bytes": 25464,
+      "sha256": "85365153e921e3f6ea30c714145e04c5f41a7decdba7e145d4f9b9db83becbb7"
     },
     {
       "path": "kviz/index.html",
-      "bytes": 34006,
-      "sha256": "f9e40beeeb273f05633001292cc0109f5a6b36335c0d6020cfabcbe7d51f2e46"
+      "bytes": 33571,
+      "sha256": "6a4947686aaada14e1f670ebea3593828b7932cb6cc5d8b717a9224ba9a165a5"
     },
     {
       "path": "lekarstva-i-zapah/index.html",
-      "bytes": 26756,
-      "sha256": "150fb9e78310b63ab851c45dd71efdb5f2a9d75785cfe3fa186d413e5add665d"
+      "bytes": 26424,
+      "sha256": "f12d051b47002d82814b02adcdeda5885802f3d3d3c50848e99df9b65f838d34"
     },
     {
       "path": "material-metod/index.html",
-      "bytes": 34588,
-      "sha256": "5603727abf99318ffb4dfdb46fcb9bf847c8b833aeaed927fb75db46674e3a01"
+      "bytes": 34354,
+      "sha256": "99579c487daa2397e48606276982bfd34361d8bdca61b14f117947e59a367a56"
     },
     {
       "path": "nabor/index.html",
@@ -414,23 +414,23 @@
     },
     {
       "path": "o-proekte/index.html",
-      "bytes": 21911,
-      "sha256": "784275093bd078ad944a9ef872a733081a77ab0415448f71568af94a5cbb7626"
+      "bytes": 21692,
+      "sha256": "dbecd2803cfb04873d267b40477835c5084eb32c5e8cdbcb1dad4c2b23a4f463"
     },
     {
       "path": "ochistitel-vozduha/index.html",
-      "bytes": 30017,
-      "sha256": "d43ce5aebfd497a9d151db69e8e141ca1e0ceb7dcf72e8feb0965d063ec5704c"
+      "bytes": 29702,
+      "sha256": "64eb06596405490981541ba1b599b48dcad8d5239a2e040e4fab176aae3d69b0"
     },
     {
       "path": "odezhda-i-tekstil/index.html",
-      "bytes": 31131,
-      "sha256": "1d323abaddec809234b2f34c727b4f0c8f67b87f99a0c09213401b93239df613"
+      "bytes": 30696,
+      "sha256": "8b892d018f1bdd1116f12f819a78f0d679f9784665a5c76e6a41901decaf2258"
     },
     {
       "path": "poroshok-dlya-tekstila/index.html",
-      "bytes": 26535,
-      "sha256": "f2bd5630c7a852f1741badb81af713078ed4d1d448942e4502d7c4d1a620b669"
+      "bytes": 26245,
+      "sha256": "474536b91cb502f09d43ef2251309040c0549b6f9954a4fd59c72d80ea03af81"
     },
     {
       "path": "robots.txt",
@@ -449,8 +449,8 @@
     },
     {
       "path": "sredstva-ot-zapaha/index.html",
-      "bytes": 26527,
-      "sha256": "b297096e3f71a93eb1924689698f677ab89cdadbfc6ba89bfc98d3533cda0ca7"
+      "bytes": 26212,
+      "sha256": "dfd3f9cfbe5702b1f4ba965edec19b33c77418f8eb7ff3195fdb6c70a7af016c"
     },
     {
       "path": "style.css",
@@ -459,18 +459,18 @@
     },
     {
       "path": "tonik-protirka/index.html",
-      "bytes": 25203,
-      "sha256": "c4a9639e6da946cb170dce18fdc7f930bf7b4b3f304fd36325c074029e130081"
+      "bytes": 24879,
+      "sha256": "959e44f548a33923def94a7b780942cfe8ea7f9f65c5748b4974e8b5529a806a"
     },
     {
       "path": "ubrat-zapah/index.html",
-      "bytes": 29568,
-      "sha256": "81deeb2fc7cc076f83502e960de2c98f61550c272b41779840f6493995aa6488"
+      "bytes": 29438,
+      "sha256": "7d7943c75a8ba573813c3c260bdd8b694e9cd7e1acceb639ffe096d36851969e"
     },
     {
       "path": "ventilyatsiya-i-vlazhnost/index.html",
-      "bytes": 28135,
-      "sha256": "297da446b90ff520138dfbbee57dfc24b9e22bed5e17ae19bec50610cbaaca83"
+      "bytes": 27896,
+      "sha256": "3a41d0e61d544069d9c42197d390498a827de4c69e2221ff0fa8600273feef6a"
     },
     {
       "path": "yandex_e3e7231de3258122.html",
@@ -479,8 +479,8 @@
     },
     {
       "path": "zapah-v-kvartire/index.html",
-      "bytes": 28451,
-      "sha256": "4476f8db1c7c97b84e969a1159fcee6fa22563463ebdf405b619a20f345f9f46"
+      "bytes": 28210,
+      "sha256": "5175397ded667f5e46fe23a2d220b3809ac9de82c8120e583aa83251404ab06e"
     }
   ],
   "http_checks": [
@@ -543,8 +543,8 @@
       "url": "https://zapahstarosti.ru/chto-takoe-2-nonenal/",
       "final_url": "https://zapahstarosti.ru/chto-takoe-2-nonenal/",
       "status": 200,
-      "bytes": 39513,
-      "sha256": "01ae890df38ff6527fe94097a3fb2420bf0169ac60f0c5a4ac4fa5b49275efb7",
+      "bytes": 39373,
+      "sha256": "69fc9ed6f663f2be42dac0f5c6aa13b5d14ee2d4b7dc31499e8076b31f3e7ada",
       "matches_source": true
     },
     {
@@ -561,8 +561,8 @@
       "url": "https://zapahstarosti.ru/faq/",
       "final_url": "https://zapahstarosti.ru/faq/",
       "status": 200,
-      "bytes": 32221,
-      "sha256": "631b20e12e442a8e1c6ecb50e9846cfba78c8bb124f390c1a5e0501281c197d3",
+      "bytes": 32132,
+      "sha256": "3de89938727fbf097df1cf2851ee90f54049d87be38dcf49fb04146a17a47148",
       "matches_source": true
     },
     {
@@ -1074,8 +1074,8 @@
       "url": "https://zapahstarosti.ru/",
       "final_url": "https://zapahstarosti.ru/",
       "status": 200,
-      "bytes": 19992,
-      "sha256": "e2a93e803f4e63569c411c33f27949b5630b8a17fdc4e6f0ad5afb6e4dc928f5",
+      "bytes": 19771,
+      "sha256": "6b38d4c2d037f3fdc6c0a48ccb9d957f6b813905fdcd64d460412440d33839e0",
       "matches_source": true
     },
     {
@@ -1083,8 +1083,8 @@
       "url": "https://zapahstarosti.ru/kak-otlichit-istochnik-zapakha/",
       "final_url": "https://zapahstarosti.ru/kak-otlichit-istochnik-zapakha/",
       "status": 200,
-      "bytes": 35537,
-      "sha256": "aba7b1da764f92da443311a09bbdd0f791d084e9c74ff39d9e0ab5af92493d33",
+      "bytes": 35472,
+      "sha256": "f0501b5ea0b816352b729dd9124ed2596a69882894181f8f52d0b6c6d22e8bef",
       "matches_source": true
     },
     {
@@ -1092,8 +1092,8 @@
       "url": "https://zapahstarosti.ru/kak-pogovorit-s-blizkim/",
       "final_url": "https://zapahstarosti.ru/kak-pogovorit-s-blizkim/",
       "status": 200,
-      "bytes": 27906,
-      "sha256": "390c25858b293eb2d8fd9281364bc8248bd9df70451eea68b8410755f475304e",
+      "bytes": 27799,
+      "sha256": "5d066e96c0b25947bdc81422f519cece3a996011afb77da8f7a1c9aed1dc8754",
       "matches_source": true
     },
     {
@@ -1101,8 +1101,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-iz-shkafa/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-iz-shkafa/",
       "status": 200,
-      "bytes": 32139,
-      "sha256": "eb11e2bf3d9dede83532140d3d37213dc578f2af0e0ab7b0f98873505e0b510e",
+      "bytes": 31981,
+      "sha256": "f0640f656fc5f7994592cd4efb03db0875708944263437a41c70780205aadbf3",
       "matches_source": true
     },
     {
@@ -1110,8 +1110,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-s-divana/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-s-divana/",
       "status": 200,
-      "bytes": 32818,
-      "sha256": "2d3661ae8a9581f444222983389375b52b6979b5577c11f49bc9619abf837905",
+      "bytes": 32634,
+      "sha256": "c43e8a73bac3891cac745417a95e88e3c0f736bed3d90be9027fa2f4af584716",
       "matches_source": true
     },
     {
@@ -1119,8 +1119,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-s-matrasa/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-s-matrasa/",
       "status": 200,
-      "bytes": 33655,
-      "sha256": "29dbb82423524946742a61e2b1c0f44a048d3f4661ca1006b6cee94b175e2b02",
+      "bytes": 33407,
+      "sha256": "f9933f94e0173409bedfd44f73be4346e8929ad6e74a9f072e90bb684e67b4c3",
       "matches_source": true
     },
     {
@@ -1128,8 +1128,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-sanuzle/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-sanuzle/",
       "status": 200,
-      "bytes": 29815,
-      "sha256": "893a2c26f72480f01582d5bb2b7f0a7eaccbd679450e2cbfeff17bd0423d1002",
+      "bytes": 29405,
+      "sha256": "ff3ebbca6761c940935a96ada60d6ebb834b22323e303641de8232d56594ec44",
       "matches_source": true
     },
     {
@@ -1137,8 +1137,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-stiralnoj-mashine/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-stiralnoj-mashine/",
       "status": 200,
-      "bytes": 30598,
-      "sha256": "5ec79814d6db384b396c9d29966734459feea0976f9ef850282acbfc83887c3c",
+      "bytes": 30239,
+      "sha256": "2ca95f98fe035b54ff8803db9e629152db211a7c071f4a9cff0991c7d4b765f1",
       "matches_source": true
     },
     {
@@ -1146,8 +1146,8 @@
       "url": "https://zapahstarosti.ru/karta-kvartiry/",
       "final_url": "https://zapahstarosti.ru/karta-kvartiry/",
       "status": 200,
-      "bytes": 22250,
-      "sha256": "254fbf67aa8f4d33d25ff5fb109f2bce6f45161a2f76e3746a47599f44425f99",
+      "bytes": 21914,
+      "sha256": "5ee6c4464b94bd42a141a924ef46f574c54dd93dbe225e43d08fe6862e0f38fd",
       "matches_source": true
     },
     {
@@ -1155,8 +1155,8 @@
       "url": "https://zapahstarosti.ru/karta-osetii/",
       "final_url": "https://zapahstarosti.ru/karta-osetii/",
       "status": 200,
-      "bytes": 19043,
-      "sha256": "4dc761e7d3d9223b27070f3c0e382cb92a404f66e625d5c9b5a1396a806aa3a8",
+      "bytes": 18660,
+      "sha256": "c87af8840f22c15b0d2a83e8e848de2a94dae2428a0a43e6ad0728a26f9e57d8",
       "matches_source": true
     },
     {
@@ -1164,8 +1164,8 @@
       "url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "final_url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "status": 200,
-      "bytes": 25859,
-      "sha256": "bbe427513ab85f032f009882b3f059d0c93c36bd3a954ae48236896c79724f6a",
+      "bytes": 25464,
+      "sha256": "85365153e921e3f6ea30c714145e04c5f41a7decdba7e145d4f9b9db83becbb7",
       "matches_source": true
     },
     {
@@ -1173,8 +1173,8 @@
       "url": "https://zapahstarosti.ru/kviz/",
       "final_url": "https://zapahstarosti.ru/kviz/",
       "status": 200,
-      "bytes": 34006,
-      "sha256": "f9e40beeeb273f05633001292cc0109f5a6b36335c0d6020cfabcbe7d51f2e46",
+      "bytes": 33571,
+      "sha256": "6a4947686aaada14e1f670ebea3593828b7932cb6cc5d8b717a9224ba9a165a5",
       "matches_source": true
     },
     {
@@ -1182,8 +1182,8 @@
       "url": "https://zapahstarosti.ru/lekarstva-i-zapah/",
       "final_url": "https://zapahstarosti.ru/lekarstva-i-zapah/",
       "status": 200,
-      "bytes": 26756,
-      "sha256": "150fb9e78310b63ab851c45dd71efdb5f2a9d75785cfe3fa186d413e5add665d",
+      "bytes": 26424,
+      "sha256": "f12d051b47002d82814b02adcdeda5885802f3d3d3c50848e99df9b65f838d34",
       "matches_source": true
     },
     {
@@ -1191,8 +1191,8 @@
       "url": "https://zapahstarosti.ru/material-metod/",
       "final_url": "https://zapahstarosti.ru/material-metod/",
       "status": 200,
-      "bytes": 34588,
-      "sha256": "5603727abf99318ffb4dfdb46fcb9bf847c8b833aeaed927fb75db46674e3a01",
+      "bytes": 34354,
+      "sha256": "99579c487daa2397e48606276982bfd34361d8bdca61b14f117947e59a367a56",
       "matches_source": true
     },
     {
@@ -1209,8 +1209,8 @@
       "url": "https://zapahstarosti.ru/o-proekte/",
       "final_url": "https://zapahstarosti.ru/o-proekte/",
       "status": 200,
-      "bytes": 21911,
-      "sha256": "784275093bd078ad944a9ef872a733081a77ab0415448f71568af94a5cbb7626",
+      "bytes": 21692,
+      "sha256": "dbecd2803cfb04873d267b40477835c5084eb32c5e8cdbcb1dad4c2b23a4f463",
       "matches_source": true
     },
     {
@@ -1218,8 +1218,8 @@
       "url": "https://zapahstarosti.ru/ochistitel-vozduha/",
       "final_url": "https://zapahstarosti.ru/ochistitel-vozduha/",
       "status": 200,
-      "bytes": 30017,
-      "sha256": "d43ce5aebfd497a9d151db69e8e141ca1e0ceb7dcf72e8feb0965d063ec5704c",
+      "bytes": 29702,
+      "sha256": "64eb06596405490981541ba1b599b48dcad8d5239a2e040e4fab176aae3d69b0",
       "matches_source": true
     },
     {
@@ -1227,8 +1227,8 @@
       "url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "final_url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "status": 200,
-      "bytes": 31131,
-      "sha256": "1d323abaddec809234b2f34c727b4f0c8f67b87f99a0c09213401b93239df613",
+      "bytes": 30696,
+      "sha256": "8b892d018f1bdd1116f12f819a78f0d679f9784665a5c76e6a41901decaf2258",
       "matches_source": true
     },
     {
@@ -1236,8 +1236,8 @@
       "url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "final_url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "status": 200,
-      "bytes": 26535,
-      "sha256": "f2bd5630c7a852f1741badb81af713078ed4d1d448942e4502d7c4d1a620b669",
+      "bytes": 26245,
+      "sha256": "474536b91cb502f09d43ef2251309040c0549b6f9954a4fd59c72d80ea03af81",
       "matches_source": true
     },
     {
@@ -1272,8 +1272,8 @@
       "url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "final_url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "status": 200,
-      "bytes": 26527,
-      "sha256": "b297096e3f71a93eb1924689698f677ab89cdadbfc6ba89bfc98d3533cda0ca7",
+      "bytes": 26212,
+      "sha256": "dfd3f9cfbe5702b1f4ba965edec19b33c77418f8eb7ff3195fdb6c70a7af016c",
       "matches_source": true
     },
     {
@@ -1290,8 +1290,8 @@
       "url": "https://zapahstarosti.ru/tonik-protirka/",
       "final_url": "https://zapahstarosti.ru/tonik-protirka/",
       "status": 200,
-      "bytes": 25203,
-      "sha256": "c4a9639e6da946cb170dce18fdc7f930bf7b4b3f304fd36325c074029e130081",
+      "bytes": 24879,
+      "sha256": "959e44f548a33923def94a7b780942cfe8ea7f9f65c5748b4974e8b5529a806a",
       "matches_source": true
     },
     {
@@ -1299,8 +1299,8 @@
       "url": "https://zapahstarosti.ru/ubrat-zapah/",
       "final_url": "https://zapahstarosti.ru/ubrat-zapah/",
       "status": 200,
-      "bytes": 29568,
-      "sha256": "81deeb2fc7cc076f83502e960de2c98f61550c272b41779840f6493995aa6488",
+      "bytes": 29438,
+      "sha256": "7d7943c75a8ba573813c3c260bdd8b694e9cd7e1acceb639ffe096d36851969e",
       "matches_source": true
     },
     {
@@ -1308,8 +1308,8 @@
       "url": "https://zapahstarosti.ru/ventilyatsiya-i-vlazhnost/",
       "final_url": "https://zapahstarosti.ru/ventilyatsiya-i-vlazhnost/",
       "status": 200,
-      "bytes": 28135,
-      "sha256": "297da446b90ff520138dfbbee57dfc24b9e22bed5e17ae19bec50610cbaaca83",
+      "bytes": 27896,
+      "sha256": "3a41d0e61d544069d9c42197d390498a827de4c69e2221ff0fa8600273feef6a",
       "matches_source": true
     },
     {
@@ -1326,8 +1326,8 @@
       "url": "https://zapahstarosti.ru/zapah-v-kvartire/",
       "final_url": "https://zapahstarosti.ru/zapah-v-kvartire/",
       "status": 200,
-      "bytes": 28451,
-      "sha256": "4476f8db1c7c97b84e969a1159fcee6fa22563463ebdf405b619a20f345f9f46",
+      "bytes": 28210,
+      "sha256": "5175397ded667f5e46fe23a2d220b3809ac9de82c8120e583aa83251404ab06e",
       "matches_source": true
     }
   ],
@@ -1536,11 +1536,12 @@
   },
   "sitemap_full_urls": 25,
   "site_fix_2026_09_24_links": {
-    "what": "Перелинковка: блок «Читайте также» с 3 контекстными ссылками на главной и 24 страницах (75 ссылок), маркеры <!--RELATED-START/END-->",
-    "commit": "9ea986c7cd7349e5ea8bedd3fc3cf0db2448800f",
-    "previous_source_commit": "222b5d74d6e0357773dc1eae37b45ac5cd4e0245",
+    "what": "Перелинковка в тексте: 63 контекстные ссылки вшиты в тематические абзацы 25 страниц (одно связующее предложение в конце абзаца); промежуточный блок «Читайте также» (коммит 9ea986c) убран",
+    "commit": "f148f53893cb57e902d90f2ce0780abfe42112af",
+    "superseded_commit": "9ea986c7cd7349e5ea8bedd3fc3cf0db2448800f",
     "files_count": 25,
     "files_deleted": [],
-    "force_push": false
+    "force_push": false,
+    "recrawl": "не запрашивался по решению автора"
   }
 }
