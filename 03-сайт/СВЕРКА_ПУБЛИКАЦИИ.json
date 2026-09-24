@@ -1690,5 +1690,14 @@
       "zapah-v-kvartire/index.html"
     ],
     "live_check": "24.09.2026: 25 из 25 файлов совпадают с live по sha256"
+  },
+  "site_fix_2026_09_24_kviz_webvisor": {
+    "what": "Квиз: вебвизор отключён (юр. аудит Ю0.3). Одобрено автором",
+    "commit": "127a974fd7df35745ea2086ddfa57de2e2084fa6",
+    "previous_source_commit": "67569f7",
+    "files": [
+      "kviz/index.html"
+    ],
+    "live_check": "24.09.2026: совпадает по sha256"
   }
 }
