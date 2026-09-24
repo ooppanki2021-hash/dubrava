@@ -1,6 +1,6 @@
 # zapahstarosti — архивный снимок публикации 24.09.2026
 
-Источник: https://github.com/ooppanki2021-hash/zapahstarosti/commit/0c4c9e5266aeb7de10ec1f729f08e88bb2c7ced7
+Источник: https://github.com/ooppanki2021-hash/zapahstarosti/commit/ee812ed33c687070e7c3ff79353b0667fa0fbfc1
 
 Разметка 21.09.2026: на 24 страницах — навигационные цепочки `BreadcrumbList`, на 9 — `HowTo`, на `/chto-takoe-2-nonenal/` — `QAPage`. Подробности — в `../../../01_НАЧНИ_ОТСЮДА/ИСТОРИЯ_РЕШЕНИЙ.md`.
 

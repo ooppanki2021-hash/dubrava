@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T17:19:36+00:00",
-  "archive_base_commit": "51b22dd1a537238077fa5eaa6494e7518a8a021b",
+  "checked_at_utc": "2026-09-24T17:29:27+00:00",
+  "archive_base_commit": "fd80f8cd675c4b20a3ac4fa9ca114c7a1327bb7f",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "0c4c9e5266aeb7de10ec1f729f08e88bb2c7ced7",
+  "source_commit": "ee812ed33c687070e7c3ff79353b0667fa0fbfc1",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -374,8 +374,8 @@
     },
     {
       "path": "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
-      "bytes": 30239,
-      "sha256": "2ca95f98fe035b54ff8803db9e629152db211a7c071f4a9cff0991c7d4b765f1"
+      "bytes": 30621,
+      "sha256": "c02047e35a67f9759be8331afb36f56b2def1e0477130dcb17cf0b18381b28ff"
     },
     {
       "path": "karta-kvartiry/index.html",
@@ -394,8 +394,8 @@
     },
     {
       "path": "kviz/index.html",
-      "bytes": 36260,
-      "sha256": "cbd95dcfa2f3e4faa04ef6715492cfe5e256576d08a6708d5a951d0ab1ef0519"
+      "bytes": 36341,
+      "sha256": "1a9618600e70d006aa8becc2c5d8bfe237c135f8ebc1610bb3cd0166851a5f87"
     },
     {
       "path": "lekarstva-i-zapah/index.html",
@@ -1137,8 +1137,8 @@
       "url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-stiralnoj-mashine/",
       "final_url": "https://zapahstarosti.ru/kak-ubrat-zapah-v-stiralnoj-mashine/",
       "status": 200,
-      "bytes": 30239,
-      "sha256": "2ca95f98fe035b54ff8803db9e629152db211a7c071f4a9cff0991c7d4b765f1",
+      "bytes": 30621,
+      "sha256": "c02047e35a67f9759be8331afb36f56b2def1e0477130dcb17cf0b18381b28ff",
       "matches_source": true
     },
     {
@@ -1173,8 +1173,8 @@
       "url": "https://zapahstarosti.ru/kviz/",
       "final_url": "https://zapahstarosti.ru/kviz/",
       "status": 200,
-      "bytes": 36260,
-      "sha256": "cbd95dcfa2f3e4faa04ef6715492cfe5e256576d08a6708d5a951d0ab1ef0519",
+      "bytes": 36341,
+      "sha256": "1a9618600e70d006aa8becc2c5d8bfe237c135f8ebc1610bb3cd0166851a5f87",
       "matches_source": true
     },
     {
@@ -1588,6 +1588,15 @@
       "kviz/index.html",
       "odezhda-i-tekstil/index.html",
       "poroshok-dlya-tekstila/index.html"
+    ]
+  },
+  "site_fix_2026_09_24_stiralka": {
+    "what": "Аудит Б.3: таблетки для посудомойки и «100 г перкарбоната» заменены на средство для очистки стиральных машин или специальный кислородный отбеливатель на основе перкарбоната по инструкции; температура — по инструкции машины. Одобрено автором",
+    "commit": "ee812ed33c687070e7c3ff79353b0667fa0fbfc1",
+    "previous_source_commit": "0c4c9e5266aeb7de10ec1f729f08e88bb2c7ced7",
+    "files": [
+      "kviz/index.html",
+      "kak-ubrat-zapah-v-stiralnoj-mashine/index.html"
     ]
   }
 }
