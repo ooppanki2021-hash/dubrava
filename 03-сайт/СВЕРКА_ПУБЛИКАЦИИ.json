@@ -1744,5 +1744,13 @@
       "constructor-v5.html"
     ],
     "live_check": "24.09.2026: совпадает по sha256"
+  },
+  "site_fix_2026_09_24_home_schema": {
+    "what": "Главная: AboutPage → WebPage, jobTitle автора",
+    "commit": "4cffa32a18693b0a85f3b045b28adc05e8413fc7",
+    "previous_source_commit": "ba5ec9d40a06a713e37243536310f625d1af804b",
+    "files": [
+      "index.html"
+    ]
   }
 }
