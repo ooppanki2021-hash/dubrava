@@ -1773,5 +1773,15 @@
       "zapah-v-kvartire/index.html"
     ],
     "live_check": "24.09.2026: 13 из 13 совпадают по sha256"
+  },
+  "site_fix_2026_09_24_semantika_text_home": {
+    "what": "Семантика в тексте: главная (1-й абзац, синоним, 2 H2, анкор, врезка про обоняние, дата). Одобрено автором",
+    "commit": "c59580e433dc210aaafadc3ca6687efc39b1da56",
+    "previous_source_commit": "9f97dc3293bf693a8af88a74c52cfaa8692e70f9",
+    "files": [
+      "index.html",
+      "sitemap.xml"
+    ],
+    "live_check": "24.09.2026: 2 из 2 совпадают по sha256"
   }
 }
