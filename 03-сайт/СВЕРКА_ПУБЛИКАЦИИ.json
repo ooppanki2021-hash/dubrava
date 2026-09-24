@@ -1802,5 +1802,24 @@
       "chto-takoe-2-nonenal/index.html"
     ],
     "live_check": "25.09.2026: совпадает по sha256"
+  },
+  "site_fix_2026_09_25_2nonenal_taniny": {
+    "what": "2-ноненаль, раздел о танинах: результат Tatsuguchi 2012 назван, повторы «не доказывает» убраны, цитата удалена, миф переформулирован. Одобрено автором",
+    "commit": "a246a98",
+    "previous_source_commit": "eed8bb7374ec2af277555a29b156f85920969738",
+    "files": [
+      "chto-takoe-2-nonenal/index.html"
+    ],
+    "live_check": "25.09.2026: совпадает по sha256"
+  },
+  "site_fix_2026_09_25_semantika_text_telo": {
+    "what": "/ubrat-zapah/: семантика (1-й абзац, 3 H2, анкор, абзацы «у женщин и мужчин», «после душа») + факты (Ghadially 1995 по источнику; Tatsuguchi 2012 вместо «могут связывать»/Plants 2019; кокоил изетионат; убран «компенсаторный выброс себума»). Одобрено автором",
+    "commit": "f009598",
+    "previous_source_commit": "a246a98",
+    "files": [
+      "ubrat-zapah/index.html",
+      "sitemap.xml"
+    ],
+    "live_check": "25.09.2026: 2 из 2 совпадают по sha256"
   }
 }
