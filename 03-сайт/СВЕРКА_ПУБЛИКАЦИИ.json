@@ -1699,5 +1699,41 @@
       "kviz/index.html"
     ],
     "live_check": "24.09.2026: совпадает по sha256"
+  },
+  "site_fix_2026_09_24_consent": {
+    "what": "Согласие на cookie/Метрику, политика ПДн, согласие, сведения о владельце (юр. аудит Ю0.1, Ю0.2, Ю0.5). Одобрено автором",
+    "commit": "cd3c0d63e3a4048c308bed2064a06e8e45d4d6a4",
+    "previous_source_commit": "127a974fd7df35745ea2086ddfa57de2e2084fa6",
+    "files": [
+      "chto-takoe-2-nonenal/index.html",
+      "faq/index.html",
+      "index.html",
+      "kak-otlichit-istochnik-zapakha/index.html",
+      "kak-pogovorit-s-blizkim/index.html",
+      "kak-ubrat-zapah-iz-shkafa/index.html",
+      "kak-ubrat-zapah-s-divana/index.html",
+      "kak-ubrat-zapah-s-matrasa/index.html",
+      "kak-ubrat-zapah-v-sanuzle/index.html",
+      "kak-ubrat-zapah-v-stiralnoj-mashine/index.html",
+      "karta-kvartiry/index.html",
+      "karta-osetii/index.html",
+      "kogda-k-vrachu/index.html",
+      "kviz/index.html",
+      "lekarstva-i-zapah/index.html",
+      "material-metod/index.html",
+      "nabor/index.html",
+      "o-proekte/index.html",
+      "ochistitel-vozduha/index.html",
+      "odezhda-i-tekstil/index.html",
+      "politika-konfidencialnosti/index.html",
+      "poroshok-dlya-tekstila/index.html",
+      "soglasie-na-obrabotku/index.html",
+      "sredstva-ot-zapaha/index.html",
+      "tonik-protirka/index.html",
+      "ubrat-zapah/index.html",
+      "ventilyatsiya-i-vlazhnost/index.html",
+      "zapah-v-kvartire/index.html"
+    ],
+    "live_check": "24.09.2026: 28 из 28 совпадают по sha256"
   }
 }
