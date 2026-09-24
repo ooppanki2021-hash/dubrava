@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T14:45:12+00:00",
-  "archive_base_commit": "7c2543da262606d0ccad807d2714259e22b4c45f",
+  "checked_at_utc": "2026-09-24T15:03:28+00:00",
+  "archive_base_commit": "8f72ed8728c101db149b6b685c8135229f7f12ca",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "832c803d9207333e6044e52e55c6b180f420a25d",
+  "source_commit": "2a87bd766a3f74aabc56a986cb4e6748add669c4",
   "destination": "03-сайт/сайт_текущий",
   "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
   "source_files": [
@@ -44,8 +44,8 @@
     },
     {
       "path": "chto-takoe-2-nonenal/index.html",
-      "bytes": 39373,
-      "sha256": "69fc9ed6f663f2be42dac0f5c6aa13b5d14ee2d4b7dc31499e8076b31f3e7ada"
+      "bytes": 39564,
+      "sha256": "f0734efdbf8da29f68e4cb71cede671155127c9aa8d95728070b35159bacb057"
     },
     {
       "path": "constructor-v5.html",
@@ -389,8 +389,8 @@
     },
     {
       "path": "kogda-k-vrachu/index.html",
-      "bytes": 25464,
-      "sha256": "85365153e921e3f6ea30c714145e04c5f41a7decdba7e145d4f9b9db83becbb7"
+      "bytes": 25631,
+      "sha256": "580380259414a5f9126c10fb4d1257860372ad2c7a6e30e3999ed1482dc7f3a5"
     },
     {
       "path": "kviz/index.html",
@@ -449,8 +449,8 @@
     },
     {
       "path": "sredstva-ot-zapaha/index.html",
-      "bytes": 26212,
-      "sha256": "dfd3f9cfbe5702b1f4ba965edec19b33c77418f8eb7ff3195fdb6c70a7af016c"
+      "bytes": 26413,
+      "sha256": "c538253183b5407544d8b3921a005ebd381e6e1c51a2e92414cb1ddf0f7c2cf3"
     },
     {
       "path": "style.css",
@@ -543,8 +543,8 @@
       "url": "https://zapahstarosti.ru/chto-takoe-2-nonenal/",
       "final_url": "https://zapahstarosti.ru/chto-takoe-2-nonenal/",
       "status": 200,
-      "bytes": 39373,
-      "sha256": "69fc9ed6f663f2be42dac0f5c6aa13b5d14ee2d4b7dc31499e8076b31f3e7ada",
+      "bytes": 39564,
+      "sha256": "f0734efdbf8da29f68e4cb71cede671155127c9aa8d95728070b35159bacb057",
       "matches_source": true
     },
     {
@@ -1164,8 +1164,8 @@
       "url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "final_url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "status": 200,
-      "bytes": 25464,
-      "sha256": "85365153e921e3f6ea30c714145e04c5f41a7decdba7e145d4f9b9db83becbb7",
+      "bytes": 25631,
+      "sha256": "580380259414a5f9126c10fb4d1257860372ad2c7a6e30e3999ed1482dc7f3a5",
       "matches_source": true
     },
     {
@@ -1272,8 +1272,8 @@
       "url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "final_url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "status": 200,
-      "bytes": 26212,
-      "sha256": "dfd3f9cfbe5702b1f4ba965edec19b33c77418f8eb7ff3195fdb6c70a7af016c",
+      "bytes": 26413,
+      "sha256": "c538253183b5407544d8b3921a005ebd381e6e1c51a2e92414cb1ddf0f7c2cf3",
       "matches_source": true
     },
     {
@@ -1550,6 +1550,16 @@
     "previous_source_commit": "f148f53893cb57e902d90f2ce0780abfe42112af",
     "files": [
       "index.html"
+    ]
+  },
+  "site_fix_2026_09_24_eeat": {
+    "what": "Ссылки на /o-proekte/ из трёх статей (E-E-A-T)",
+    "commit": "2a87bd766a3f74aabc56a986cb4e6748add669c4",
+    "previous_source_commit": "832c803d9207333e6044e52e55c6b180f420a25d",
+    "files": [
+      "chto-takoe-2-nonenal/index.html",
+      "kogda-k-vrachu/index.html",
+      "sredstva-ot-zapaha/index.html"
     ]
   }
 }
