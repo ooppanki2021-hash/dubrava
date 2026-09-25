@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-25T18:05:00+00:00",
+  "checked_at_utc": "2026-09-25T18:10:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "ebb433fa642dee8c9275e97e5a8623fa33f47435",
+  "source_commit": "2fbf0af15caabf9513ee56c70ed9a1bdcd319970",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Этап 2: /poroshok-dlya-tekstila/ ebb433f — 1-й абзац как отстирать запах старости, если ярлык позволяет.",
+  "note": "Этап 2: /sredstva-ot-zapaha/ 2fbf0af — 1-й абзац средство от запаха старости тела.",
   "source_files": [
     {
       "path": "CNAME",
@@ -449,8 +449,8 @@
     },
     {
       "path": "sredstva-ot-zapaha/index.html",
-      "bytes": 26191,
-      "sha256": "26830b5554f1562c16bb4dfab5d4fd9ddb1770f2e32424894b4e87391e7f6290"
+      "bytes": 32151,
+      "sha256": "d235fd2edb1005455fb2e742a2c2e37f10e84dcad8c8d90f67dfa1871e21ec5b"
     },
     {
       "path": "style.css",
@@ -1272,8 +1272,8 @@
       "url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "final_url": "https://zapahstarosti.ru/sredstva-ot-zapaha/",
       "status": 200,
-      "bytes": 26191,
-      "sha256": "26830b5554f1562c16bb4dfab5d4fd9ddb1770f2e32424894b4e87391e7f6290",
+      "bytes": 32151,
+      "sha256": "d235fd2edb1005455fb2e742a2c2e37f10e84dcad8c8d90f67dfa1871e21ec5b",
       "matches_source": true
     },
     {
