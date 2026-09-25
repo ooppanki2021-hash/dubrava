@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-25T18:10:00+00:00",
+  "checked_at_utc": "2026-09-25T18:15:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "2fbf0af15caabf9513ee56c70ed9a1bdcd319970",
+  "source_commit": "9982d38bc64e9b81f2311709a258d4f88f4bd326",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Этап 2: /sredstva-ot-zapaha/ 2fbf0af — 1-й абзац средство от запаха старости тела.",
+  "note": "Этап 2: /kogda-k-vrachu/ 9982d38 — 1-й абзац странный запах после 40.",
   "source_files": [
     {
       "path": "CNAME",
@@ -389,8 +389,8 @@
     },
     {
       "path": "kogda-k-vrachu/index.html",
-      "bytes": 24808,
-      "sha256": "91cd9ad3efe9adb2e68e35faa35f9990bf504bcfce7dcf1eb275bbec658b1cde"
+      "bytes": 27914,
+      "sha256": "7fefb85702973d61bce4ecbfbfedeb5f095967ef21431c49c9713d19fc84d4d0"
     },
     {
       "path": "kviz/index.html",
@@ -1164,8 +1164,8 @@
       "url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "final_url": "https://zapahstarosti.ru/kogda-k-vrachu/",
       "status": 200,
-      "bytes": 24808,
-      "sha256": "91cd9ad3efe9adb2e68e35faa35f9990bf504bcfce7dcf1eb275bbec658b1cde",
+      "bytes": 27914,
+      "sha256": "7fefb85702973d61bce4ecbfbfedeb5f095967ef21431c49c9713d19fc84d4d0",
       "matches_source": true
     },
     {
