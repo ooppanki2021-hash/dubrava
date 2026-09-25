@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-25T17:55:00+00:00",
+  "checked_at_utc": "2026-09-25T18:00:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "c61387762cc4c1729354c3878e59f7e076306638",
+  "source_commit": "bcf7d5b00980c217b3b848c3079278c895aa0bee",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Этап 2: /kak-ubrat-zapah-s-matrasa/ c613877 — 1-й абзац, H2 почему пахнет старостью, если ярлык позволяет.",
+  "note": "Этап 2: /odezhda-i-tekstil/ bcf7d5b — 1-й абзац старческий запах на одежде, H2 почему держится, если ярлык позволяет.",
   "source_files": [
     {
       "path": "CNAME",
@@ -424,8 +424,8 @@
     },
     {
       "path": "odezhda-i-tekstil/index.html",
-      "bytes": 31692,
-      "sha256": "5ff43d018d7c068cc9bc3fc512214f98038f5db34f3c91106f84b67136648a87"
+      "bytes": 35027,
+      "sha256": "4b8dd68d4a3c9cf873d56129668f3946d385fcba5bbe0eea4102c88f76b9de4f"
     },
     {
       "path": "poroshok-dlya-tekstila/index.html",
@@ -1227,8 +1227,8 @@
       "url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "final_url": "https://zapahstarosti.ru/odezhda-i-tekstil/",
       "status": 200,
-      "bytes": 31692,
-      "sha256": "5ff43d018d7c068cc9bc3fc512214f98038f5db34f3c91106f84b67136648a87",
+      "bytes": 35027,
+      "sha256": "4b8dd68d4a3c9cf873d56129668f3946d385fcba5bbe0eea4102c88f76b9de4f",
       "matches_source": true
     },
     {
