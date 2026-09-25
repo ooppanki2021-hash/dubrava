@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-25T18:20:00+00:00",
+  "checked_at_utc": "2026-09-25T18:25:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "16b23b270b8dbc841edcb80611f40c59c16dd45d",
+  "source_commit": "62377f2ce98b1db4e9f5f2cd8b19d25f63fdd0e4",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Этап 2: /kak-pogovorit-s-blizkim/ 16b23b2 — 1-й абзац как сказать пожилому родителю о запахе.",
+  "note": "Этап 2 финал: /faq/ 62377f2 — 1-й абзац запах старости ответы врача. Этап 2 закрыт полностью.",
   "source_files": [
     {
       "path": "CNAME",
@@ -54,8 +54,8 @@
     },
     {
       "path": "faq/index.html",
-      "bytes": 32307,
-      "sha256": "4d5dea90b89cbf67ce5142858ff670919a1676c41e98601367cf87e0f3fe511d"
+      "bytes": 35386,
+      "sha256": "eac794df0833f31a45328d0ecc210d69aec3d0a36db632dde979e6d2bc84ba9f"
     },
     {
       "path": "favicon.ico",
@@ -561,8 +561,8 @@
       "url": "https://zapahstarosti.ru/faq/",
       "final_url": "https://zapahstarosti.ru/faq/",
       "status": 200,
-      "bytes": 32307,
-      "sha256": "4d5dea90b89cbf67ce5142858ff670919a1676c41e98601367cf87e0f3fe511d",
+      "bytes": 35386,
+      "sha256": "eac794df0833f31a45328d0ecc210d69aec3d0a36db632dde979e6d2bc84ba9f",
       "matches_source": true
     },
     {
