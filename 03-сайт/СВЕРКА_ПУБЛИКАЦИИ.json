@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-24T18:32:39+00:00",
+  "checked_at_utc": "2026-09-25T17:35:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "f56708bbf4cff482ea340c4931ffe497a8195a5c",
+  "source_commit": "74898e1b0f854dbf6d3249fced3c3315ffb75ea0",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Снимок опубликованного сайта, а не одобрение научных утверждений. README и три технических Markdown-документа описывают архив и не синхронизируются с сайтом. Новая неопубликованная версия трекера сохранена в 05_приложение без изменений. Учтены правки 19.09, 21.09 и 22–24.09.2026 (11 коммитов после 79f98cd: метатеги, DOI, иконки, кнопка конструктора, datePublished, /nabor/ noindex,follow); 94 файлов заново проверены по HTTP.",
+  "note": "Этап 2 семантика: /zapah-v-kvartire/ 74898e1 — закрыть быстро/без ремонта/дом/дача/после бабушки, 'если ярлык позволяет' (3 места), убрать 40%, анкоры с запросом. Слепок обновлен на 25.09.2026.",
   "source_files": [
     {
       "path": "CNAME",
@@ -479,8 +479,8 @@
     },
     {
       "path": "zapah-v-kvartire/index.html",
-      "bytes": 28285,
-      "sha256": "8f00cf28cf4cfdc4bae0d6ff52cf2063d621f5a3bb2c0e7096d7edde75b74a27"
+      "bytes": 34266,
+      "sha256": "f862c2517492129ba4e55a14033c1e10eecadfbe773f6b2e24cf0b250bff237f"
     }
   ],
   "http_checks": [
@@ -1326,9 +1326,10 @@
       "url": "https://zapahstarosti.ru/zapah-v-kvartire/",
       "final_url": "https://zapahstarosti.ru/zapah-v-kvartire/",
       "status": 200,
-      "bytes": 28285,
-      "sha256": "8f00cf28cf4cfdc4bae0d6ff52cf2063d621f5a3bb2c0e7096d7edde75b74a27",
-      "matches_source": true
+      "bytes": 34266,
+      "sha256": "f862c2517492129ba4e55a14033c1e10eecadfbe773f6b2e24cf0b250bff237f",
+      "matches_source": true,
+      "checked_at": "2026-09-25T17:30:00+00:00"
     }
   ],
   "content_pages": 26,
