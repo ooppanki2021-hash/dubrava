@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-25T18:15:00+00:00",
+  "checked_at_utc": "2026-09-25T18:20:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "9982d38bc64e9b81f2311709a258d4f88f4bd326",
+  "source_commit": "16b23b270b8dbc841edcb80611f40c59c16dd45d",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Этап 2: /kogda-k-vrachu/ 9982d38 — 1-й абзац странный запах после 40.",
+  "note": "Этап 2: /kak-pogovorit-s-blizkim/ 16b23b2 — 1-й абзац как сказать пожилому родителю о запахе.",
   "source_files": [
     {
       "path": "CNAME",
@@ -349,8 +349,8 @@
     },
     {
       "path": "kak-pogovorit-s-blizkim/index.html",
-      "bytes": 27799,
-      "sha256": "5d066e96c0b25947bdc81422f519cece3a996011afb77da8f7a1c9aed1dc8754"
+      "bytes": 31066,
+      "sha256": "c9da65457aa4e3217311cb01e0bf36a5fc740597afadec9a795d35a229ea021b"
     },
     {
       "path": "kak-ubrat-zapah-iz-shkafa/index.html",
@@ -1092,8 +1092,8 @@
       "url": "https://zapahstarosti.ru/kak-pogovorit-s-blizkim/",
       "final_url": "https://zapahstarosti.ru/kak-pogovorit-s-blizkim/",
       "status": 200,
-      "bytes": 27799,
-      "sha256": "5d066e96c0b25947bdc81422f519cece3a996011afb77da8f7a1c9aed1dc8754",
+      "bytes": 31066,
+      "sha256": "c9da65457aa4e3217311cb01e0bf36a5fc740597afadec9a795d35a229ea021b",
       "matches_source": true
     },
     {
