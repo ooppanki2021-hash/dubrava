@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-25T18:00:00+00:00",
+  "checked_at_utc": "2026-09-25T18:05:00+00:00",
   "archive_base_commit": "472bccdd37f4d7e75e16a762687f8a9731f55b30",
   "source_repository": "https://github.com/ooppanki2021-hash/zapahstarosti",
-  "source_commit": "bcf7d5b00980c217b3b848c3079278c895aa0bee",
+  "source_commit": "ebb433fa642dee8c9275e97e5a8623fa33f47435",
   "destination": "03-сайт/сайт_текущий",
-  "note": "Этап 2: /odezhda-i-tekstil/ bcf7d5b — 1-й абзац старческий запах на одежде, H2 почему держится, если ярлык позволяет.",
+  "note": "Этап 2: /poroshok-dlya-tekstila/ ebb433f — 1-й абзац как отстирать запах старости, если ярлык позволяет.",
   "source_files": [
     {
       "path": "CNAME",
@@ -429,8 +429,8 @@
     },
     {
       "path": "poroshok-dlya-tekstila/index.html",
-      "bytes": 26663,
-      "sha256": "6a6658dd95d3873b3c0cae4f162c9913819e0df8e6e8d158ebfae6cb5380f6d4"
+      "bytes": 29800,
+      "sha256": "0c244da6985fa5d503affc5fb9f344d5f2905e7d3e29dc93fa6b45c26c62c48d"
     },
     {
       "path": "robots.txt",
@@ -1236,8 +1236,8 @@
       "url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "final_url": "https://zapahstarosti.ru/poroshok-dlya-tekstila/",
       "status": 200,
-      "bytes": 26663,
-      "sha256": "6a6658dd95d3873b3c0cae4f162c9913819e0df8e6e8d158ebfae6cb5380f6d4",
+      "bytes": 29800,
+      "sha256": "0c244da6985fa5d503affc5fb9f344d5f2905e7d3e29dc93fa6b45c26c62c48d",
       "matches_source": true
     },
     {
