@@ -3,8 +3,8 @@
 from PIL import Image
 import numpy as np
 
-logo=Image.open('DUBRAVA_логотип.png').convert('RGBA')
-face=Image.open('uploads/DUBRAVA_порошок_цветной_40plus_лицо.png').convert('RGB')
+logo=Image.open('УСТАРЕЛО_логотип.png').convert('RGBA')
+face=Image.open('uploads/УСТАРЕЛО_порошок_цветной_40plus_лицо.png').convert('RGB')
 
 # чистый кусок фона коробки -> плитка
 tile=face.crop((200,400,300,440))
@@ -22,8 +22,8 @@ a=a*0.35+np.array([243,229,207])*0.65
 bg=Image.fromarray(a.astype(np.uint8))
 
 bg.paste(logo,(M,M),logo)
-bg.save('DUBRAVA_логотип_на_фоне.png')
+bg.save('УСТАРЕЛО_логотип_на_фоне.png')
 print('ok',bg.size)
 
 # крупная версия для читаемости
-bg.resize((W*2,H*2),Image.LANCZOS).save('DUBRAVA_логотип_на_фоне@2x.png')
+bg.resize((W*2,H*2),Image.LANCZOS).save('УСТАРЕЛО_логотип_на_фоне@2x.png')

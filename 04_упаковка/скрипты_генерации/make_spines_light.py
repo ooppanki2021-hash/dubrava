@@ -16,4 +16,4 @@ print("кегль:",SZ)
 M=60; GAP=80
 c=Image.new("RGB",(M*2+PW*2+GAP,M*2+PH),BG)
 c.paste(L,(M,M)); c.paste(R,(M+PW+GAP,M))
-c.save("DUBRAVA_корешки_порошок_светлый.png"); print("ok",c.size)
+c.save("УСТАРЕЛО_корешки_порошок_светлый.png"); print("ok",c.size)

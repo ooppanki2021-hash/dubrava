@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from PIL import Image, ImageDraw, ImageFont
 
-SRC='DUBRAVA_спина_гель_v1.png'; OUT='DUBRAVA_спина_гель_v2.png'
+SRC='УСТАРЕЛО_спина_гель_v1.png'; OUT='УСТАРЕЛО_спина_гель_v2.png'
 GREEN=(31,69,53); INK=(59,44,30)
 F ="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FB="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"

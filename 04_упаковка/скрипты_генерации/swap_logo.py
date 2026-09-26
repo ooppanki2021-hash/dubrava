@@ -2,7 +2,7 @@
 from PIL import Image
 import numpy as np
 
-FACE='uploads/DUBRAVA_порошок_цветной_40plus_лицо.png'
+FACE='uploads/УСТАРЕЛО_порошок_цветной_40plus_лицо.png'
 face=Image.open(FACE).convert('RGB')
 
 # 1) вырезаем логотип с лицевой стороны
@@ -33,5 +33,5 @@ def swap(path,out,box):
     im.paste(new,(x,y),new)
     im.save(out); print('ok',out,im.size)
 
-swap('DUBRAVA_спина_гель_v2.png','DUBRAVA_спина_гель_v3.png',(48,38,330))
-swap('DUBRAVA_спина_порошок_v4.png','DUBRAVA_спина_порошок_v5.png',(52,48,340))
+swap('УСТАРЕЛО_спина_гель_v2.png','УСТАРЕЛО_спина_гель_v3.png',(48,38,330))
+swap('УСТАРЕЛО_спина_порошок_v4.png','УСТАРЕЛО_спина_порошок_v5.png',(52,48,340))

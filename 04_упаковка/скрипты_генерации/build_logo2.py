@@ -9,7 +9,7 @@ import numpy as np, math
 from scipy import ndimage
 
 OCHRE=(197,135,49); INK=(43,30,24); LEAF=(30,62,40)
-face=Image.open('uploads/DUBRAVA_порошок_цветной_40plus_лицо.png').convert('RGB')
+face=Image.open('uploads/УСТАРЕЛО_порошок_цветной_40plus_лицо.png').convert('RGB')
 
 # ---------- 1. слово ДУБРАВА с лица (чистое, без колец и 40+) ----------
 w=face.crop((258,314,416,360))
@@ -102,6 +102,6 @@ out.paste(ring,(M,M+(Ht-D)//2),ring)
 out.paste(word,(M+D+GAP1,base),word)
 out.paste(plus,(M+D+GAP1+WW+GAP2, base+WH-plus.size[1]-int(WH*0.06)),plus)
 
-out.save('DUBRAVA_логотип.png'); print('ok',out.size)
+out.save('УСТАРЕЛО_логотип.png'); print('ok',out.size)
 prev=Image.new('RGB',out.size,(243,229,207)); prev.paste(out,(0,0),out)
 prev.save('/tmp/lp.png')
